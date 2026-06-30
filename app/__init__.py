@@ -33,6 +33,14 @@ def read_csv(path):
     return pd.read_csv(path, sep=None, engine="python")
 
 
+def normalize_percent_columns(df):
+    if "participacion_pct" in df.columns:
+        values = pd.to_numeric(df["participacion_pct"], errors="coerce")
+        if not values.dropna().empty and values.dropna().max() <= 1:
+            df["participacion_pct"] = values * 100
+    return df
+
+
 def load_seed_data():
     from .models import (
         BalanceComercial,
@@ -50,10 +58,15 @@ def load_seed_data():
         (BalanceComercial, ROOT / "data" / "balances_comerciales.csv", ["fecha", "alcance", "exportaciones_usd", "importaciones_usd", "balance_usd"]),
     ]
 
+    if os.getenv("VERCEL"):
+        for model, _, _ in datasets:
+            db.session.query(model).delete()
+        db.session.commit()
+
     for model, path, required_columns in datasets:
         if not path.exists() or db.session.query(model.id).first():
             continue
-        df = read_csv(path)
+        df = normalize_percent_columns(read_csv(path))
         missing_columns = [column for column in required_columns if column not in df.columns]
         if missing_columns:
             continue
