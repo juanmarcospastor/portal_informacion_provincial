@@ -42,13 +42,18 @@
   <div class="card wide price-panel">
     <div class="section-head">
       <h2>Precios internacionales</h2>
-      <span>series con escala propia por mineral</span>
+      <span>minerales relevantes para {{ provincia }}</span>
     </div>
-    <div class="price-grid">
-      <div class="price-cell"><div id="chart-precio-oro"></div></div>
-      <div class="price-cell"><div id="chart-precio-plata"></div></div>
-      <div class="price-cell"><div id="chart-precio-cobre"></div></div>
-      <div class="price-cell"><div id="chart-precio-litio"></div></div>
+    <div class="price-grid {% if provincia == 'NOA' %}single{% endif %}">
+      {% if provincia == "San Juan" %}
+        <div class="price-cell"><div id="chart-precio-oro"></div></div>
+        <div class="price-cell"><div id="chart-precio-cobre"></div></div>
+      {% elif provincia == "Santa Cruz" %}
+        <div class="price-cell"><div id="chart-precio-oro"></div></div>
+        <div class="price-cell"><div id="chart-precio-plata"></div></div>
+      {% elif provincia == "NOA" %}
+        <div class="price-cell"><div id="chart-precio-litio"></div></div>
+      {% endif %}
     </div>
   </div>
 </section>

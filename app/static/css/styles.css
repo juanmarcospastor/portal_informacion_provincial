@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #f4f6fa;
   --card: #ffffff;
   --navy: #202746;
@@ -119,6 +119,7 @@ button {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
+.price-grid.single { grid-template-columns: 1fr; }
 .price-cell {
   min-width: 0;
   border: 1px solid var(--border);
