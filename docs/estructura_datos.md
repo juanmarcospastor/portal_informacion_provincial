@@ -1,12 +1,12 @@
 # Estructura de datos recomendada
 
-El tablero está pensado para trabajar con una base en formato largo. Esto permite filtrar por fecha, provincia, mineral, destino y fuente sin rehacer el modelo.
+El tablero trabaja con una base en formato largo. Esto permite filtrar por fecha, provincia, mineral, destino y fuente sin rehacer el modelo.
 
 ## 1. exportaciones_provinciales
 
 Archivo sugerido: `data/exportaciones_provinciales.csv`
 
-| columna | tipo | ejemplo | comentario |
+| columna | tipo | formato / valor de referencia | comentario |
 |---|---:|---|---|
 | fecha | texto YYYY-MM | 2026-04 | mes de referencia |
 | provincia | texto | San Juan | usar también Argentina para total nacional |
@@ -19,7 +19,7 @@ Archivo sugerido: `data/exportaciones_provinciales.csv`
 
 Archivo sugerido: `data/exportaciones_productos.csv`
 
-| columna | tipo | ejemplo |
+| columna | tipo | formato / valor de referencia |
 |---|---:|---|
 | fecha | texto YYYY-MM | 2026-04 |
 | provincia | texto | San Juan |
@@ -32,7 +32,7 @@ Archivo sugerido: `data/exportaciones_productos.csv`
 
 Archivo sugerido: `data/exportaciones_destinos.csv`
 
-| columna | tipo | ejemplo |
+| columna | tipo | formato / valor de referencia |
 |---|---:|---|
 | fecha | texto YYYY-MM | 2026-04 |
 | provincia | texto | San Juan |
@@ -45,7 +45,7 @@ Archivo sugerido: `data/exportaciones_destinos.csv`
 
 Archivo sugerido: `data/precios_minerales.csv`
 
-| columna | tipo | ejemplo |
+| columna | tipo | formato / valor de referencia |
 |---|---:|---|
 | fecha | texto YYYY-MM | 2026-04 |
 | mineral | texto | Oro |
@@ -59,7 +59,7 @@ Archivo sugerido: `data/precios_minerales.csv`
 
 Archivo sugerido: `data/balances_comerciales.csv`
 
-| columna | tipo | ejemplo |
+| columna | tipo | formato / valor de referencia |
 |---|---:|---|
 | fecha | texto YYYY-MM | 2026-04 |
 | alcance | texto | Minerales Argentina |
@@ -72,11 +72,10 @@ Archivo sugerido: `data/balances_comerciales.csv`
 
 - Participación minera provincial = exportaciones_mineras_usd / exportaciones_totales_usd.
 - Participación nacional = exportaciones_mineras_usd provincial / exportaciones_mineras_usd Argentina.
-- Volumen físico implícito de oro = valor_fob_usd de oro / precio_usd del oro.
 
 ## Próximas tablas sugeridas
 
-Cuando avances con datos reales, conviene sumar:
+Cuando avances con más datos, conviene sumar:
 
 - `proyectos_mineros`: proyecto, provincia, mineral, empresa, etapa, inversión estimada, empleo, coordenadas.
 - `escenarios_cobre`: año, proyecto, producción estimada, precio cobre, exportaciones estimadas.

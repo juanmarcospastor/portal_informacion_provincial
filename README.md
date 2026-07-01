@@ -1,19 +1,19 @@
-# Monitor Interactivo de Minería de San Juan
+# Monitor Interactivo de Minería
 
-Demo completo en **Flask + Plotly + SQLite/PostgreSQL** para construir un tablero minero provincial con exportaciones, precios internacionales, destinos, composición por producto, balance comercial y volumen físico implícito.
+Tablero en **Flask + Plotly + SQLite/PostgreSQL** para monitorear exportaciones mineras provinciales, precios internacionales, destinos y composición por producto.
 
-## 1. Qué incluye
+## Qué incluye
 
 - Aplicación Flask.
 - Gráficos interactivos con Plotly.
-- Base de datos SQLite lista para usar.
-- Compatibilidad con PostgreSQL cambiando `DATABASE_URL`.
-- Script de carga demo.
+- Carga automática de datos desde los CSV del proyecto.
+- Compatibilidad con PostgreSQL mediante `DATABASE_URL`.
 - Script importador de CSV.
 - Estructura de datos documentada.
 - Vista de tablero y vista de revisión de datos.
+- Configuración para despliegue en Vercel.
 
-## 2. Estructura del proyecto
+## Estructura del proyecto
 
 ```text
 mineria_sanjuan_dashboard/
@@ -29,26 +29,34 @@ mineria_sanjuan_dashboard/
 │     ├─ css/styles.css
 │     └─ js/dashboard.js
 ├─ data/
+│  ├─ exportaciones_provinciales.csv
+│  ├─ exportaciones_productos.csv
+│  ├─ exportaciones_destinos.csv
+│  ├─ precios_minerales.csv
+│  └─ balances_comerciales.csv
 ├─ docs/
 │  └─ estructura_datos.md
 ├─ scripts/
-│  ├─ seed_demo.py
 │  └─ import_csv.py
-├─ .env.example
+├─ pyproject.toml
 ├─ requirements.txt
+├─ vercel.json
 └─ run.py
 ```
 
-## 3. Instalación en Windows
+## Instalación local en Windows
 
-Abrí una terminal en la carpeta donde descomprimas el proyecto y ejecutá:
+Abrí una terminal en la carpeta del proyecto y ejecutá:
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
-copy .env.example .env
-python scripts\seed_demo.py
+python scripts\import_csv.py data/exportaciones_provinciales.csv exportaciones_provinciales --replace
+python scripts\import_csv.py data/exportaciones_productos.csv exportaciones_productos --replace
+python scripts\import_csv.py data/exportaciones_destinos.csv exportaciones_destinos --replace
+python scripts\import_csv.py data/precios_minerales.csv precios_minerales --replace
+python scripts\import_csv.py data/balances_comerciales.csv balances_comerciales --replace
 python run.py
 ```
 
@@ -58,18 +66,25 @@ Después abrí:
 http://127.0.0.1:5000
 ```
 
-## 4. Instalación en Linux/Mac
+## Instalación local en Linux/Mac
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env
-python scripts/seed_demo.py
+python scripts/import_csv.py data/exportaciones_provinciales.csv exportaciones_provinciales --replace
+python scripts/import_csv.py data/exportaciones_productos.csv exportaciones_productos --replace
+python scripts/import_csv.py data/exportaciones_destinos.csv exportaciones_destinos --replace
+python scripts/import_csv.py data/precios_minerales.csv precios_minerales --replace
+python scripts/import_csv.py data/balances_comerciales.csv balances_comerciales --replace
 python run.py
 ```
 
-## 5. Usar PostgreSQL
+## Despliegue en Vercel
+
+El proyecto incluye `vercel.json` y `pyproject.toml`. En Vercel se crea una base SQLite temporal y se cargan automáticamente los CSV ubicados en `data/`.
+
+## Usar PostgreSQL
 
 Crear base:
 
@@ -77,32 +92,27 @@ Crear base:
 CREATE DATABASE mineria_sanjuan;
 ```
 
-Editar `.env`:
+Configurar la variable de entorno:
 
 ```text
 DATABASE_URL=postgresql+psycopg2://usuario:password@localhost:5432/mineria_sanjuan
 ```
 
-Luego ejecutar:
+Luego ejecutar las cargas CSV con `scripts/import_csv.py` y correr la aplicación.
+
+## Actualización de datos
+
+Los archivos principales están en `data/`. Para actualizar el tablero, completá los CSV con las columnas indicadas en `docs/estructura_datos.md` y ejecutá:
 
 ```bash
-python scripts/seed_demo.py
-python run.py
+python scripts/import_csv.py data/exportaciones_provinciales.csv exportaciones_provinciales --replace
+python scripts/import_csv.py data/exportaciones_productos.csv exportaciones_productos --replace
+python scripts/import_csv.py data/exportaciones_destinos.csv exportaciones_destinos --replace
+python scripts/import_csv.py data/precios_minerales.csv precios_minerales --replace
+python scripts/import_csv.py data/balances_comerciales.csv balances_comerciales --replace
 ```
 
-## 6. Reemplazar datos demo por datos reales
-
-Prepará CSV con las columnas indicadas en `docs/estructura_datos.md` y ejecutá, por ejemplo:
-
-```bash
-python scripts/import_csv.py data/exportaciones_provinciales.csv exportaciones_provinciales
-python scripts/import_csv.py data/exportaciones_productos.csv exportaciones_productos
-python scripts/import_csv.py data/exportaciones_destinos.csv exportaciones_destinos
-python scripts/import_csv.py data/precios_minerales.csv precios_minerales
-python scripts/import_csv.py data/balances_comerciales.csv balances_comerciales
-```
-
-## 7. Próximas mejoras recomendadas
+## Próximas mejoras recomendadas
 
 - Agregar login si el tablero se usa para clientes.
 - Agregar carga desde Excel con varias hojas.

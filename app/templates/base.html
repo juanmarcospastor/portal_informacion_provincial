@@ -10,8 +10,8 @@
 <body>
   <header class="topbar">
     <div>
-      <h1>Monitor Interactivo de Minería de San Juan</h1>
-      <p>Exportaciones, precios internacionales, destinos, composición y balance comercial</p>
+      <h1>Monitor Interactivo de Minería</h1>
+      <p>Exportaciones, precios internacionales, destinos y composición minera provincial</p>
     </div>
     <nav>
       <a href="{{ url_for('main.dashboard') }}">Tablero</a>
@@ -22,7 +22,7 @@
     {% block content %}{% endblock %}
   </main>
   <footer class="footer">
-    Demo Flask + Plotly + SQLite/PostgreSQL. Datos de ejemplo para reemplazar por bases reales.
+    Tablero minero provincial con datos cargados desde fuentes CSV del proyecto.
   </footer>
 </body>
 </html>

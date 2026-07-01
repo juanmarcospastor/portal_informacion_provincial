@@ -1,7 +1,7 @@
 """
-Importador base para reemplazar la información demo por tus archivos CSV.
+Importador base para cargar archivos CSV en las tablas del tablero.
 
-Ejemplos:
+Uso:
     python scripts/import_csv.py data/exportaciones_provinciales.csv exportaciones_provinciales
     python scripts/import_csv.py data/exportaciones_provinciales.csv exportaciones_provinciales --replace
 
@@ -41,7 +41,7 @@ def main():
     table = sys.argv[2]
     replace = len(sys.argv) == 4 and sys.argv[3] == "--replace"
     if len(sys.argv) == 4 and not replace:
-        print(f"Opcion no soportada: {sys.argv[3]}")
+        print(f"Opción no soportada: {sys.argv[3]}")
         sys.exit(1)
     if table not in MODELS:
         print(f"Tabla no soportada: {table}")
