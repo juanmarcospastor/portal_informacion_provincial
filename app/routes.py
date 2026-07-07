@@ -15,6 +15,9 @@ from .models import (
     ExportacionProducto,
     ExportacionProvincial,
     PrecioMineral,
+    RecaudacionNacional,
+    RecursoProvincial,
+    TransferenciaNacional,
 )
 
 bp = Blueprint("main", __name__)
@@ -181,6 +184,78 @@ def generar_lectura(provincia, fecha, actual, total_arg, top_producto, top_desti
     return lectura
 
 
+
+def pesos_reales_millions(value):
+    if value is None:
+        return "s/d"
+    return f"$ {value/1_000_000:,.0f} M".replace(",", ".")
+
+
+def pct_direct(value):
+    if value is None:
+        return "s/d"
+    sign = "+" if value > 0 else ""
+    return f"{sign}{value:.1f}%".replace(".", ",")
+
+
+def recursos_filters():
+    provincias = [p[0] for p in RecursoProvincial.query.with_entities(RecursoProvincial.provincia).distinct().order_by(RecursoProvincial.provincia).all()]
+    fechas = set()
+    fechas.update(f[0] for f in RecursoProvincial.query.with_entities(RecursoProvincial.fecha).distinct().all())
+    fechas.update(f[0] for f in TransferenciaNacional.query.with_entities(TransferenciaNacional.fecha).distinct().all())
+    fechas.update(f[0] for f in RecaudacionNacional.query.with_entities(RecaudacionNacional.fecha).distinct().all())
+    return provincias or ["San Juan"], sorted(fechas, reverse=True)
+
+
+def recursos_lectura(provincia, fecha, total, transferencia, nacional, top_impuesto):
+    if not total:
+        return [
+            f"No hay datos de recursos provinciales para {provincia} en {fecha}.",
+            "Completando recursos_provinciales.csv se habilitan los indicadores, gráficos y lectura automática.",
+        ]
+
+    lectura = [
+        f"En {fecha}, {provincia} registró recursos provinciales por {pesos_reales_millions(total.valor_real)} en términos reales, con una variación interanual de {pct_direct(total.variacion_interanual_pct)}.",
+    ]
+    if top_impuesto:
+        lectura.append(f"El principal componente tributario fue {top_impuesto.concepto}, con {pesos_reales_millions(top_impuesto.valor_real)}.")
+    if transferencia:
+        lectura.append(f"Los envíos nacionales por {transferencia.concepto} sumaron {pesos_reales_millions(transferencia.valor_real)}, con una variación interanual de {pct_direct(transferencia.variacion_interanual_pct)}.")
+    if nacional:
+        lectura.append(f"La recaudación nacional total alcanzó {pesos_reales_millions(nacional.valor_real)} en términos reales, con una variación interanual de {pct_direct(nacional.variacion_interanual_pct)}.")
+    return lectura
+
+
+def evolution_with_variation_fig(df, title, value_label):
+    if df.empty:
+        return empty_fig(title)
+    fig = go.Figure()
+    fig.add_trace(go.Bar(
+        x=df["fecha"],
+        y=df["variacion_interanual_pct"],
+        name="Variación interanual",
+        marker_color="#cbd5e1",
+        opacity=0.35,
+        yaxis="y2",
+        hovertemplate="%{x}<br>Variación interanual: %{y:.1f}%<extra></extra>",
+    ))
+    fig.add_trace(go.Scatter(
+        x=df["fecha"],
+        y=df["valor_real"],
+        mode="lines+markers",
+        name=value_label,
+        line=dict(color="#25315d", width=3),
+        marker=dict(size=7),
+        hovertemplate="%{x}<br>Valor real: $ %{y:,.0f}<extra></extra>",
+    ))
+    fig.update_layout(
+        title=title,
+        hovermode="x unified",
+        yaxis=dict(title="Pesos reales"),
+        yaxis2=dict(title="Variación interanual (%)", overlaying="y", side="right", ticksuffix="%", showgrid=False, zeroline=True),
+    )
+    fig.update_xaxes(title="")
+    return fig
 def get_filters():
     provincias = [p[0] for p in ExportacionProvincial.query.with_entities(ExportacionProvincial.provincia).distinct().order_by(ExportacionProvincial.provincia).all()]
     fechas = [f[0] for f in ExportacionProvincial.query.with_entities(ExportacionProvincial.fecha).distinct().order_by(ExportacionProvincial.fecha.desc()).all()]
@@ -234,9 +309,9 @@ def portal():
         },
         {
             "title": "Recursos provinciales",
-            "description": "Espacio preparado para indicadores fiscales, productivos y recursos estratégicos provinciales.",
+            "description": "Recaudación provincial, coparticipación y recaudación nacional en términos reales.",
             "href": url_for("main.recursos_provinciales"),
-            "status": "En preparación",
+            "status": "Disponible",
         },
     ]
     return render_template("portal.html", modules=modules)
@@ -245,7 +320,41 @@ def portal():
 @bp.route("/recursos-provinciales")
 @login_required
 def recursos_provinciales():
-    return render_template("recursos_provinciales.html")
+    provincias, fechas = recursos_filters()
+    provincia = request.args.get("provincia", "San Juan")
+    fecha = request.args.get("fecha", fechas[0] if fechas else "2026-05")
+
+    total = RecursoProvincial.query.filter_by(provincia=provincia, fecha=fecha, concepto="Total").first()
+    impuestos = RecursoProvincial.query.filter(
+        RecursoProvincial.provincia == provincia,
+        RecursoProvincial.fecha == fecha,
+        RecursoProvincial.concepto != "Total",
+    ).order_by(RecursoProvincial.valor_real.desc()).all()
+    top_impuesto = impuestos[0] if impuestos else None
+    transferencia = TransferenciaNacional.query.filter_by(provincia=provincia, fecha=fecha).order_by(TransferenciaNacional.valor_real.desc()).first()
+    nacional = RecaudacionNacional.query.filter_by(fecha=fecha, concepto="Total").first()
+    iva = RecaudacionNacional.query.filter_by(fecha=fecha, concepto="IVA").first()
+    ganancias = RecaudacionNacional.query.filter_by(fecha=fecha, concepto="Ganancias").first()
+
+    kpis = {
+        "total": pesos_reales_millions(total.valor_real if total else None),
+        "var_total": pct_direct(total.variacion_interanual_pct if total else None),
+        "principal": f"{top_impuesto.concepto} ({pesos_reales_millions(top_impuesto.valor_real)})" if top_impuesto else "s/d",
+        "coparticipacion": pesos_reales_millions(transferencia.valor_real if transferencia else None),
+        "nacional": pesos_reales_millions(nacional.valor_real if nacional else None),
+        "iva_ganancias": pesos_reales_millions((iva.valor_real if iva else 0) + (ganancias.valor_real if ganancias else 0)) if iva or ganancias else "s/d",
+    }
+    lectura = recursos_lectura(provincia, fecha, total, transferencia, nacional, top_impuesto)
+
+    return render_template(
+        "recursos_provinciales.html",
+        provincias=provincias,
+        fechas=fechas,
+        provincia=provincia,
+        fecha=fecha,
+        kpis=kpis,
+        lectura=lectura,
+    )
 
 
 @bp.route("/mineria")
@@ -375,6 +484,59 @@ def charts():
         "balance": fig_json(fig_bal),
     })
 
+
+
+@bp.route("/api/recursos-charts")
+@login_required
+def recursos_charts():
+    provincia = request.args.get("provincia", "San Juan")
+    fecha = request.args.get("fecha", "2026-05")
+
+    rows = RecursoProvincial.query.filter_by(provincia=provincia, concepto="Total").order_by(RecursoProvincial.fecha).all()
+    df_total = pd.DataFrame([{"fecha": r.fecha, "valor_real": r.valor_real, "variacion_interanual_pct": r.variacion_interanual_pct} for r in rows], columns=["fecha", "valor_real", "variacion_interanual_pct"])
+    fig_total = evolution_with_variation_fig(df_total, f"Recursos provinciales de {provincia}", "Recursos provinciales")
+
+    rows = RecursoProvincial.query.filter(
+        RecursoProvincial.provincia == provincia,
+        RecursoProvincial.fecha == fecha,
+        RecursoProvincial.concepto != "Total",
+    ).all()
+    df_imp = pd.DataFrame([{"concepto": r.concepto, "valor_real": r.valor_real} for r in rows], columns=["concepto", "valor_real"])
+    if df_imp.empty:
+        fig_imp = empty_fig(f"Composición de recursos - {provincia} {fecha}")
+    else:
+        fig_imp = px.bar(df_imp.sort_values("valor_real", ascending=True), x="valor_real", y="concepto", orientation="h", title=f"Composición de recursos - {provincia} {fecha}")
+        fig_imp.update_xaxes(title="Pesos reales")
+        fig_imp.update_yaxes(title="")
+
+    rows = TransferenciaNacional.query.filter_by(provincia=provincia).order_by(TransferenciaNacional.fecha).all()
+    df_trans = pd.DataFrame([{"fecha": r.fecha, "valor_real": r.valor_real, "variacion_interanual_pct": r.variacion_interanual_pct} for r in rows], columns=["fecha", "valor_real", "variacion_interanual_pct"])
+    fig_trans = evolution_with_variation_fig(df_trans, f"Coparticipación y envíos nacionales a {provincia}", "Transferencias nacionales")
+
+    rows = RecaudacionNacional.query.order_by(RecaudacionNacional.fecha).all()
+    df_nac = pd.DataFrame([{"fecha": r.fecha, "concepto": r.concepto, "valor_real": r.valor_real, "variacion_interanual_pct": r.variacion_interanual_pct} for r in rows], columns=["fecha", "concepto", "valor_real", "variacion_interanual_pct"])
+    if df_nac.empty:
+        fig_nac = empty_fig("Recaudación nacional")
+        fig_var = empty_fig("Variaciones interanuales")
+    else:
+        conceptos = ["Total", "IVA", "Ganancias"]
+        df_nac_main = df_nac[df_nac["concepto"].isin(conceptos)]
+        fig_nac = px.line(df_nac_main, x="fecha", y="valor_real", color="concepto", markers=True, title="Recaudación nacional en términos reales")
+        fig_nac.update_yaxes(title="Pesos reales")
+        fig_nac.update_xaxes(title="")
+
+        df_var = df_nac_main[df_nac_main["fecha"] == fecha]
+        fig_var = px.bar(df_var, x="concepto", y="variacion_interanual_pct", title=f"Variaciones interanuales - {fecha}")
+        fig_var.update_yaxes(title="Variación interanual (%)", ticksuffix="%", zeroline=True)
+        fig_var.update_xaxes(title="")
+
+    return jsonify({
+        "recursos_total": fig_json(fig_total),
+        "recursos_composicion": fig_json(fig_imp),
+        "transferencias": fig_json(fig_trans),
+        "recaudacion_nacional": fig_json(fig_nac),
+        "variaciones": fig_json(fig_var),
+    })
 
 @bp.route("/datos")
 @login_required

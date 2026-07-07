@@ -11,6 +11,9 @@ Tablas soportadas:
     exportaciones_destinos
     precios_minerales
     balances_comerciales
+    recursos_provinciales
+    transferencias_nacionales
+    recaudacion_nacional
 
 Revisá docs/estructura_datos.md para ver columnas esperadas.
 """
@@ -22,7 +25,16 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.append(str(ROOT))
 
 from app import create_app, db  # noqa: E402
-from app.models import ExportacionProvincial, ExportacionProducto, ExportacionDestino, PrecioMineral, BalanceComercial  # noqa: E402
+from app.models import (  # noqa: E402
+    BalanceComercial,
+    ExportacionDestino,
+    ExportacionProducto,
+    ExportacionProvincial,
+    PrecioMineral,
+    RecaudacionNacional,
+    RecursoProvincial,
+    TransferenciaNacional,
+)
 
 MODELS = {
     "exportaciones_provinciales": ExportacionProvincial,
@@ -30,6 +42,9 @@ MODELS = {
     "exportaciones_destinos": ExportacionDestino,
     "precios_minerales": PrecioMineral,
     "balances_comerciales": BalanceComercial,
+    "recursos_provinciales": RecursoProvincial,
+    "transferencias_nacionales": TransferenciaNacional,
+    "recaudacion_nacional": RecaudacionNacional,
 }
 
 

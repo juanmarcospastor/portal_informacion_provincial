@@ -80,3 +80,48 @@ Cuando avances con más datos, conviene sumar:
 - `proyectos_mineros`: proyecto, provincia, mineral, empresa, etapa, inversión estimada, empleo, coordenadas.
 - `escenarios_cobre`: año, proyecto, producción estimada, precio cobre, exportaciones estimadas.
 - `pbg_san_juan`: año, sector, valor agregado, fuente.
+
+## 6. recursos_provinciales
+
+Archivo sugerido: `data/recursos_provinciales.csv`
+
+Usar una fila por mes, provincia y concepto. Para San Juan, por ahora conviene cargar: Ingresos Brutos, Inmobiliario, Automotor, Sellos y Total.
+
+| columna | tipo | formato / valor de referencia | comentario |
+|---|---:|---|---|
+| fecha | texto YYYY-MM | 2026-05 | mes de referencia |
+| provincia | texto | San Juan | provincia del dato |
+| concepto | texto | Ingresos Brutos | impuesto o Total |
+| categoria | texto | Impuesto provincial | agrupador opcional |
+| valor_real | número | 52300000000 | valor en pesos reales, sin separadores |
+| variacion_interanual_pct | número | 4.8 | porcentaje real interanual, sin símbolo % |
+| fuente | texto | Ministerio de Hacienda | fuente del dato |
+
+## 7. transferencias_nacionales
+
+Archivo sugerido: `data/transferencias_nacionales.csv`
+
+Para registrar coparticipación y otros envíos de Nación a la provincia.
+
+| columna | tipo | formato / valor de referencia | comentario |
+|---|---:|---|---|
+| fecha | texto YYYY-MM | 2026-05 | mes de referencia |
+| provincia | texto | San Juan | provincia receptora |
+| concepto | texto | Coparticipación y otros envíos nacionales | concepto transferido |
+| valor_real | número | 128000000000 | valor en pesos reales |
+| variacion_interanual_pct | número | 3.9 | porcentaje real interanual, sin símbolo % |
+| fuente | texto | DNAP / Ministerio de Economía | fuente del dato |
+
+## 8. recaudacion_nacional
+
+Archivo sugerido: `data/recaudacion_nacional.csv`
+
+Para registrar recaudación nacional total y principales impuestos. Por ahora el tablero muestra Total, IVA y Ganancias.
+
+| columna | tipo | formato / valor de referencia | comentario |
+|---|---:|---|---|
+| fecha | texto YYYY-MM | 2026-05 | mes de referencia |
+| concepto | texto | IVA | Total, IVA, Ganancias u otro concepto |
+| valor_real | número | 4210000000000 | valor en pesos reales |
+| variacion_interanual_pct | número | 5.2 | porcentaje real interanual, sin símbolo % |
+| fuente | texto | ARCA / Ministerio de Economía | fuente del dato |

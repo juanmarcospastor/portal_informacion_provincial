@@ -7,7 +7,7 @@ Portal en **Flask + Plotly + SQLite/PostgreSQL** para consultar tableros provinc
 - Login con usuario y contraseña.
 - Página principal para seleccionar módulos.
 - Módulo de minería disponible en `/mineria`.
-- Módulo inicial de recursos provinciales preparado para futuros indicadores.
+- Módulo de recursos provinciales con recaudación provincial, transferencias nacionales y recaudación nacional.
 - Gráficos interactivos con Plotly.
 - Carga automática de datos desde los CSV del proyecto.
 - Compatibilidad con PostgreSQL mediante `DATABASE_URL`.
@@ -78,6 +78,9 @@ python scripts\import_csv.py data/exportaciones_productos.csv exportaciones_prod
 python scripts\import_csv.py data/exportaciones_destinos.csv exportaciones_destinos --replace
 python scripts\import_csv.py data/precios_minerales.csv precios_minerales --replace
 python scripts\import_csv.py data/balances_comerciales.csv balances_comerciales --replace
+python scripts\import_csv.py data/recursos_provinciales.csv recursos_provinciales --replace
+python scripts\import_csv.py data/transferencias_nacionales.csv transferencias_nacionales --replace
+python scripts\import_csv.py data/recaudacion_nacional.csv recaudacion_nacional --replace
 python run.py
 ```
 
@@ -98,6 +101,9 @@ python scripts/import_csv.py data/exportaciones_productos.csv exportaciones_prod
 python scripts/import_csv.py data/exportaciones_destinos.csv exportaciones_destinos --replace
 python scripts/import_csv.py data/precios_minerales.csv precios_minerales --replace
 python scripts/import_csv.py data/balances_comerciales.csv balances_comerciales --replace
+python scripts/import_csv.py data/recursos_provinciales.csv recursos_provinciales --replace
+python scripts/import_csv.py data/transferencias_nacionales.csv transferencias_nacionales --replace
+python scripts/import_csv.py data/recaudacion_nacional.csv recaudacion_nacional --replace
 python run.py
 ```
 
@@ -139,13 +145,16 @@ python scripts/import_csv.py data/exportaciones_productos.csv exportaciones_prod
 python scripts/import_csv.py data/exportaciones_destinos.csv exportaciones_destinos --replace
 python scripts/import_csv.py data/precios_minerales.csv precios_minerales --replace
 python scripts/import_csv.py data/balances_comerciales.csv balances_comerciales --replace
+python scripts/import_csv.py data/recursos_provinciales.csv recursos_provinciales --replace
+python scripts/import_csv.py data/transferencias_nacionales.csv transferencias_nacionales --replace
+python scripts/import_csv.py data/recaudacion_nacional.csv recaudacion_nacional --replace
 ```
 
 ## Próximas mejoras recomendadas
 
 - Agregar roles de usuario.
 - Agregar carga desde Excel con varias hojas.
-- Agregar indicadores de recursos provinciales.
+- Ampliar indicadores de recursos provinciales con más provincias y fuentes.
 - Agregar módulo de escenarios de cobre para Los Azules y Vicuña.
 - Agregar mapa de proyectos con coordenadas.
 - Agregar comparación contra PBG, empleo, regalías y recaudación provincial.

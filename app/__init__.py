@@ -48,6 +48,9 @@ def load_seed_data():
         ExportacionProducto,
         ExportacionProvincial,
         PrecioMineral,
+        RecaudacionNacional,
+        RecursoProvincial,
+        TransferenciaNacional,
     )
 
     datasets = [
@@ -56,6 +59,9 @@ def load_seed_data():
         (ExportacionDestino, ROOT / "data" / "exportaciones_destinos.csv", ["fecha", "provincia", "destino", "valor_fob_usd"]),
         (PrecioMineral, ROOT / "data" / "precios_minerales.csv", ["fecha", "mineral", "precio_usd", "unidad"]),
         (BalanceComercial, ROOT / "data" / "balances_comerciales.csv", ["fecha", "alcance", "exportaciones_usd", "importaciones_usd", "balance_usd"]),
+        (RecursoProvincial, ROOT / "data" / "recursos_provinciales.csv", ["fecha", "provincia", "concepto", "valor_real"]),
+        (TransferenciaNacional, ROOT / "data" / "transferencias_nacionales.csv", ["fecha", "provincia", "concepto", "valor_real"]),
+        (RecaudacionNacional, ROOT / "data" / "recaudacion_nacional.csv", ["fecha", "concepto", "valor_real"]),
     ]
 
     if os.getenv("VERCEL"):

@@ -1,8 +1,61 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="placeholder card">
-  <p class="eyebrow">Módulo</p>
-  <h2>Recursos provinciales</h2>
-  <p>Este espacio queda preparado para incorporar indicadores de recursos provinciales, recaudación, regalías, empleo, producción y otros tableros estratégicos.</p>
+<section class="filters card">
+  <form method="get" id="filter-form">
+    <label>Provincia
+      <select name="provincia" id="provincia">
+        {% for p in provincias %}
+          <option value="{{ p }}" {% if p == provincia %}selected{% endif %}>{{ p }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>Mes
+      <select name="fecha" id="fecha">
+        {% for f in fechas %}
+          <option value="{{ f }}" {% if f == fecha %}selected{% endif %}>{{ f }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <button type="submit">Actualizar</button>
+  </form>
 </section>
+
+<section class="kpi-grid recursos-kpis">
+  <div class="kpi"><span>Recursos provinciales</span><strong>{{ kpis.total }}</strong></div>
+  <div class="kpi"><span>Variación interanual</span><strong>{{ kpis.var_total }}</strong></div>
+  <div class="kpi"><span>Principal impuesto</span><strong>{{ kpis.principal }}</strong></div>
+  <div class="kpi"><span>Coparticipación y envíos nacionales</span><strong>{{ kpis.coparticipacion }}</strong></div>
+  <div class="kpi"><span>Recaudación nacional</span><strong>{{ kpis.nacional }}</strong></div>
+  <div class="kpi"><span>IVA + Ganancias</span><strong>{{ kpis.iva_ganancias }}</strong></div>
+</section>
+
+<section class="grid two">
+  <div class="card"><div id="chart-recursos-total"></div></div>
+  <div class="card"><div id="chart-recursos-composicion"></div></div>
+  <div class="card"><div id="chart-transferencias"></div></div>
+  <div class="card"><div id="chart-variaciones"></div></div>
+  <div class="card wide"><div id="chart-recaudacion-nacional"></div></div>
+</section>
+
+<section class="card notes">
+  <h2>Lectura fiscal automática</h2>
+  {% for parrafo in lectura %}
+    <p>{{ parrafo }}</p>
+  {% endfor %}
+</section>
+
+<section class="card notes data-guide">
+  <h2>Archivos para completar</h2>
+  <p>Usá <code>data/recursos_provinciales.csv</code> para Ingresos Brutos, Inmobiliario, Automotor, Sellos y Total.</p>
+  <p>Usá <code>data/transferencias_nacionales.csv</code> para coparticipación y otros envíos de Nación a San Juan.</p>
+  <p>Usá <code>data/recaudacion_nacional.csv</code> para Total, IVA, Ganancias y otros conceptos nacionales.</p>
+</section>
+
+<script>
+  window.recursosParams = {
+    provincia: "{{ provincia }}",
+    fecha: "{{ fecha }}"
+  };
+</script>
+<script src="{{ url_for('static', filename='js/recursos.js') }}"></script>
 {% endblock %}
