@@ -34,7 +34,7 @@ SECRET_KEY=clave_secreta_larga
 ## Estructura del proyecto
 
 ```text
-mineria_sanjuan_dashboard/
+portal_informacion_provincial/
 ├─ app/
 │  ├─ __init__.py
 │  ├─ models.py

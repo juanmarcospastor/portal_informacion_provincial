@@ -1,7 +1,7 @@
 [project]
-name = "mineria-sanjuan-dashboard"
+name = "portal-informacion-provincial"
 version = "0.1.0"
-description = "Tablero Flask para monitoreo minero provincial"
+description = "Portal Flask para tableros de informacion provincial"
 requires-python = ">=3.12"
 dependencies = [
   "Flask==3.0.3",
