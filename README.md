@@ -1,17 +1,35 @@
-# Monitor Interactivo de Minería
+# Portal de Información Provincial
 
-Tablero en **Flask + Plotly + SQLite/PostgreSQL** para monitorear exportaciones mineras provinciales, precios internacionales, destinos y composición por producto.
+Portal en **Flask + Plotly + SQLite/PostgreSQL** para consultar tableros provinciales. Actualmente incluye el módulo de minería con exportaciones mineras, precios internacionales, destinos y composición por producto.
 
 ## Qué incluye
 
-- Aplicación Flask.
+- Login con usuario y contraseña.
+- Página principal para seleccionar módulos.
+- Módulo de minería disponible en `/mineria`.
+- Módulo inicial de recursos provinciales preparado para futuros indicadores.
 - Gráficos interactivos con Plotly.
 - Carga automática de datos desde los CSV del proyecto.
 - Compatibilidad con PostgreSQL mediante `DATABASE_URL`.
 - Script importador de CSV.
-- Estructura de datos documentada.
-- Vista de tablero y vista de revisión de datos.
 - Configuración para despliegue en Vercel.
+
+## Credenciales
+
+Por defecto, para desarrollo local:
+
+```text
+Usuario: admin
+Contraseña: mineria2026
+```
+
+Para producción, configurar variables de entorno:
+
+```text
+DASHBOARD_USER=usuario
+DASHBOARD_PASSWORD=contraseña_segura
+SECRET_KEY=clave_secreta_larga
+```
 
 ## Estructura del proyecto
 
@@ -23,8 +41,11 @@ mineria_sanjuan_dashboard/
 │  ├─ routes.py
 │  ├─ templates/
 │  │  ├─ base.html
+│  │  ├─ login.html
+│  │  ├─ portal.html
 │  │  ├─ dashboard.html
-│  │  └─ datos.html
+│  │  ├─ datos.html
+│  │  └─ recursos_provinciales.html
 │  └─ static/
 │     ├─ css/styles.css
 │     └─ js/dashboard.js
@@ -84,6 +105,14 @@ python run.py
 
 El proyecto incluye `vercel.json` y `pyproject.toml`. En Vercel se crea una base SQLite temporal y se cargan automáticamente los CSV ubicados en `data/`.
 
+En Vercel conviene configurar:
+
+```text
+DASHBOARD_USER=usuario
+DASHBOARD_PASSWORD=contraseña_segura
+SECRET_KEY=clave_secreta_larga
+```
+
 ## Usar PostgreSQL
 
 Crear base:
@@ -114,9 +143,9 @@ python scripts/import_csv.py data/balances_comerciales.csv balances_comerciales 
 
 ## Próximas mejoras recomendadas
 
-- Agregar login si el tablero se usa para clientes.
+- Agregar roles de usuario.
 - Agregar carga desde Excel con varias hojas.
+- Agregar indicadores de recursos provinciales.
 - Agregar módulo de escenarios de cobre para Los Azules y Vicuña.
 - Agregar mapa de proyectos con coordenadas.
-- Agregar generación automática de resumen ejecutivo mensual.
 - Agregar comparación contra PBG, empleo, regalías y recaudación provincial.

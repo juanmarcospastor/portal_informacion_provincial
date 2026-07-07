@@ -3,26 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Monitor Minero San Juan</title>
+  <title>Portal de Información Provincial</title>
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
   <header class="topbar">
     <div>
-      <h1>Monitor Interactivo de Minería</h1>
-      <p>Exportaciones, precios internacionales, destinos y composición minera provincial</p>
+      <h1>Portal de Información Provincial</h1>
+      <p>Tableros de recursos, minería e indicadores estratégicos</p>
     </div>
     <nav>
-      <a href="{{ url_for('main.dashboard') }}">Tablero</a>
-      <a href="{{ url_for('main.datos') }}">Datos</a>
+      {% if session.get('authenticated') %}
+        <a href="{{ url_for('main.portal') }}">Inicio</a>
+        <a href="{{ url_for('main.dashboard') }}">Minería</a>
+        <a href="{{ url_for('main.datos') }}">Datos</a>
+        <a href="{{ url_for('main.logout') }}">Salir</a>
+      {% else %}
+        <a href="{{ url_for('main.login') }}">Ingresar</a>
+      {% endif %}
     </nav>
   </header>
   <main class="container">
     {% block content %}{% endblock %}
   </main>
   <footer class="footer">
-    Tablero minero provincial con datos cargados desde fuentes CSV del proyecto.
+    Portal provincial con datos cargados desde fuentes CSV del proyecto.
   </footer>
 </body>
 </html>

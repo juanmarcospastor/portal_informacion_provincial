@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="portal-head">
+  <p class="eyebrow">Panel principal</p>
+  <h2>Seleccioná un tablero</h2>
+  <p>Elegí el área de información que querés consultar.</p>
+</section>
+
+<section class="module-grid">
+  {% for module in modules %}
+    <a class="module-card" href="{{ module.href }}">
+      <span>{{ module.status }}</span>
+      <h3>{{ module.title }}</h3>
+      <p>{{ module.description }}</p>
+    </a>
+  {% endfor %}
+</section>
+{% endblock %}
