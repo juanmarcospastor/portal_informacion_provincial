@@ -284,8 +284,7 @@ def login():
         if valid_user and valid_password:
             session["authenticated"] = True
             session["user"] = username
-            next_url = request.args.get("next") or url_for("main.portal")
-            return redirect(next_url)
+            return redirect(url_for("main.portal"))
         error = "Usuario o contraseña incorrectos."
 
     return render_template("login.html", error=error)
