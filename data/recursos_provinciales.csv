@@ -1,86 +1,547 @@
-﻿"fecha","provincia","concepto","categoria","valor_real","variacion_interanual_pct","fuente"
-"2025-01","San Juan","Inmobiliario","Impuesto provincial","4891286400","","Carga inicial editable"
-"2025-01","San Juan","Ingresos Brutos","Impuesto provincial","44836792000","","Carga inicial editable"
-"2025-01","San Juan","Automotor","Impuesto provincial","5604599000","","Carga inicial editable"
-"2025-01","San Juan","Sellos","Impuesto provincial","10903492600","","Carga inicial editable"
-"2025-01","San Juan","Total","Total recursos provinciales","66236170000","","Carga inicial editable"
-"2025-02","San Juan","Inmobiliario","Impuesto provincial","4982745600","","Carga inicial editable"
-"2025-02","San Juan","Ingresos Brutos","Impuesto provincial","45675168000","","Carga inicial editable"
-"2025-02","San Juan","Automotor","Impuesto provincial","5709396000","","Carga inicial editable"
-"2025-02","San Juan","Sellos","Impuesto provincial","11107370400","","Carga inicial editable"
-"2025-02","San Juan","Total","Total recursos provinciales","67474680000","","Carga inicial editable"
-"2025-03","San Juan","Inmobiliario","Impuesto provincial","5074377600","","Carga inicial editable"
-"2025-03","San Juan","Ingresos Brutos","Impuesto provincial","46515128000","","Carga inicial editable"
-"2025-03","San Juan","Automotor","Impuesto provincial","5814391000","","Carga inicial editable"
-"2025-03","San Juan","Sellos","Impuesto provincial","11311633400","","Carga inicial editable"
-"2025-03","San Juan","Total","Total recursos provinciales","68715530000","","Carga inicial editable"
-"2025-04","San Juan","Inmobiliario","Impuesto provincial","4819200000","","Carga inicial editable"
-"2025-04","San Juan","Ingresos Brutos","Impuesto provincial","44176000000","","Carga inicial editable"
-"2025-04","San Juan","Automotor","Impuesto provincial","5522000000","","Carga inicial editable"
-"2025-04","San Juan","Sellos","Impuesto provincial","10742800000","","Carga inicial editable"
-"2025-04","San Juan","Total","Total recursos provinciales","65260000000","","Carga inicial editable"
-"2025-05","San Juan","Inmobiliario","Impuesto provincial","4910832000","","Carga inicial editable"
-"2025-05","San Juan","Ingresos Brutos","Impuesto provincial","45015960000","","Carga inicial editable"
-"2025-05","San Juan","Automotor","Impuesto provincial","5626995000","","Carga inicial editable"
-"2025-05","San Juan","Sellos","Impuesto provincial","10947063000","","Carga inicial editable"
-"2025-05","San Juan","Total","Total recursos provinciales","66500850000","","Carga inicial editable"
-"2025-06","San Juan","Inmobiliario","Impuesto provincial","5002636800","","Carga inicial editable"
-"2025-06","San Juan","Ingresos Brutos","Impuesto provincial","45857504000","","Carga inicial editable"
-"2025-06","San Juan","Automotor","Impuesto provincial","5732188000","","Carga inicial editable"
-"2025-06","San Juan","Sellos","Impuesto provincial","11151711200","","Carga inicial editable"
-"2025-06","San Juan","Total","Total recursos provinciales","67744040000","","Carga inicial editable"
-"2025-07","San Juan","Inmobiliario","Impuesto provincial","5094614400","","Carga inicial editable"
-"2025-07","San Juan","Ingresos Brutos","Impuesto provincial","46700632000","","Carga inicial editable"
-"2025-07","San Juan","Automotor","Impuesto provincial","5837579000","","Carga inicial editable"
-"2025-07","San Juan","Sellos","Impuesto provincial","11356744600","","Carga inicial editable"
-"2025-07","San Juan","Total","Total recursos provinciales","68989570000","","Carga inicial editable"
-"2025-08","San Juan","Inmobiliario","Impuesto provincial","4838400000","","Carga inicial editable"
-"2025-08","San Juan","Ingresos Brutos","Impuesto provincial","44352000000","","Carga inicial editable"
-"2025-08","San Juan","Automotor","Impuesto provincial","5544000000","","Carga inicial editable"
-"2025-08","San Juan","Sellos","Impuesto provincial","10785600000","","Carga inicial editable"
-"2025-08","San Juan","Total","Total recursos provinciales","65520000000","","Carga inicial editable"
-"2025-09","San Juan","Inmobiliario","Impuesto provincial","4930377600","","Carga inicial editable"
-"2025-09","San Juan","Ingresos Brutos","Impuesto provincial","45195128000","","Carga inicial editable"
-"2025-09","San Juan","Automotor","Impuesto provincial","5649391000","","Carga inicial editable"
-"2025-09","San Juan","Sellos","Impuesto provincial","10990633400","","Carga inicial editable"
-"2025-09","San Juan","Total","Total recursos provinciales","66765530000","","Carga inicial editable"
-"2025-10","San Juan","Inmobiliario","Impuesto provincial","5022528000","","Carga inicial editable"
-"2025-10","San Juan","Ingresos Brutos","Impuesto provincial","46039840000","","Carga inicial editable"
-"2025-10","San Juan","Automotor","Impuesto provincial","5754980000","","Carga inicial editable"
-"2025-10","San Juan","Sellos","Impuesto provincial","11196052000","","Carga inicial editable"
-"2025-10","San Juan","Total","Total recursos provinciales","68013400000","","Carga inicial editable"
-"2025-11","San Juan","Inmobiliario","Impuesto provincial","5114851200","","Carga inicial editable"
-"2025-11","San Juan","Ingresos Brutos","Impuesto provincial","46886136000","","Carga inicial editable"
-"2025-11","San Juan","Automotor","Impuesto provincial","5860767000","","Carga inicial editable"
-"2025-11","San Juan","Sellos","Impuesto provincial","11401855800","","Carga inicial editable"
-"2025-11","San Juan","Total","Total recursos provinciales","69263610000","","Carga inicial editable"
-"2025-12","San Juan","Inmobiliario","Impuesto provincial","4857600000","","Carga inicial editable"
-"2025-12","San Juan","Ingresos Brutos","Impuesto provincial","44528000000","","Carga inicial editable"
-"2025-12","San Juan","Automotor","Impuesto provincial","5566000000","","Carga inicial editable"
-"2025-12","San Juan","Sellos","Impuesto provincial","10828400000","","Carga inicial editable"
-"2025-12","San Juan","Total","Total recursos provinciales","65780000000","","Carga inicial editable"
-"2026-01","San Juan","Inmobiliario","Impuesto provincial","5164924800","5.6","Carga inicial editable"
-"2026-01","San Juan","Ingresos Brutos","Impuesto provincial","47345144000","5.6","Carga inicial editable"
-"2026-01","San Juan","Automotor","Impuesto provincial","5918143000","5.6","Carga inicial editable"
-"2026-01","San Juan","Sellos","Impuesto provincial","11513478200","5.6","Carga inicial editable"
-"2026-01","San Juan","Total","Total recursos provinciales","69941690000","5.6","Carga inicial editable"
-"2026-02","San Juan","Inmobiliario","Impuesto provincial","5266195200","5.7","Carga inicial editable"
-"2026-02","San Juan","Ingresos Brutos","Impuesto provincial","48273456000","5.7","Carga inicial editable"
-"2026-02","San Juan","Automotor","Impuesto provincial","6034182000","5.7","Carga inicial editable"
-"2026-02","San Juan","Sellos","Impuesto provincial","11739226800","5.7","Carga inicial editable"
-"2026-02","San Juan","Total","Total recursos provinciales","71313060000","5.7","Carga inicial editable"
-"2026-03","San Juan","Inmobiliario","Impuesto provincial","5367811200","5.8","Carga inicial editable"
-"2026-03","San Juan","Ingresos Brutos","Impuesto provincial","49204936000","5.8","Carga inicial editable"
-"2026-03","San Juan","Automotor","Impuesto provincial","6150617000","5.8","Carga inicial editable"
-"2026-03","San Juan","Sellos","Impuesto provincial","11965745800","5.8","Carga inicial editable"
-"2026-03","San Juan","Total","Total recursos provinciales","72689110000","5.8","Carga inicial editable"
-"2026-04","San Juan","Inmobiliario","Impuesto provincial","5102400000","5.9","Carga inicial editable"
-"2026-04","San Juan","Ingresos Brutos","Impuesto provincial","46772000000","5.9","Carga inicial editable"
-"2026-04","San Juan","Automotor","Impuesto provincial","5846500000","5.9","Carga inicial editable"
-"2026-04","San Juan","Sellos","Impuesto provincial","11374100000","5.9","Carga inicial editable"
-"2026-04","San Juan","Total","Total recursos provinciales","69095000000","5.9","Carga inicial editable"
-"2026-05","San Juan","Inmobiliario","Impuesto provincial","5204016000","6","Carga inicial editable"
-"2026-05","San Juan","Ingresos Brutos","Impuesto provincial","47703480000","6","Carga inicial editable"
-"2026-05","San Juan","Automotor","Impuesto provincial","5962935000","6","Carga inicial editable"
-"2026-05","San Juan","Sellos","Impuesto provincial","11600619000","6","Carga inicial editable"
-"2026-05","San Juan","Total","Total recursos provinciales","70471050000","6","Carga inicial editable"
+fecha,provincia,concepto,categoria,valor_real,variacion_interanual_pct,fuente
+2020-01,San Juan,Ingresos Brutos,Impuesto provincial,25562929138,,Carga de usuario
+2020-01,San Juan,Inmobiliario,Impuesto provincial,1278570577,,Carga de usuario
+2020-01,San Juan,Automotor,Impuesto provincial,2036317273,,Carga de usuario
+2020-01,San Juan,Sellos,Impuesto provincial,2561924033,,Carga de usuario
+2020-01,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-01,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-01,San Juan,Total,Total recursos provinciales,36265509460,,Carga de usuario
+2020-02,San Juan,Ingresos Brutos,Impuesto provincial,21605953540,,Carga de usuario
+2020-02,San Juan,Inmobiliario,Impuesto provincial,3027158694,,Carga de usuario
+2020-02,San Juan,Automotor,Impuesto provincial,1852089377,,Carga de usuario
+2020-02,San Juan,Sellos,Impuesto provincial,2371581889,,Carga de usuario
+2020-02,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-02,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-02,San Juan,Total,Total recursos provinciales,33159494605,,Carga de usuario
+2020-03,San Juan,Ingresos Brutos,Impuesto provincial,21643549896,,Carga de usuario
+2020-03,San Juan,Inmobiliario,Impuesto provincial,2226789601,,Carga de usuario
+2020-03,San Juan,Automotor,Impuesto provincial,3360854939,,Carga de usuario
+2020-03,San Juan,Sellos,Impuesto provincial,2078711263,,Carga de usuario
+2020-03,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-03,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-03,San Juan,Total,Total recursos provinciales,31590675565,,Carga de usuario
+2020-04,San Juan,Ingresos Brutos,Impuesto provincial,22159412698,,Carga de usuario
+2020-04,San Juan,Inmobiliario,Impuesto provincial,2317092823,,Carga de usuario
+2020-04,San Juan,Automotor,Impuesto provincial,2831938338,,Carga de usuario
+2020-04,San Juan,Sellos,Impuesto provincial,1689259631,,Carga de usuario
+2020-04,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-04,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-04,San Juan,Total,Total recursos provinciales,32893143769,,Carga de usuario
+2020-05,San Juan,Ingresos Brutos,Impuesto provincial,20011622754,,Carga de usuario
+2020-05,San Juan,Inmobiliario,Impuesto provincial,2078002527,,Carga de usuario
+2020-05,San Juan,Automotor,Impuesto provincial,6698701268,,Carga de usuario
+2020-05,San Juan,Sellos,Impuesto provincial,1804933954,,Carga de usuario
+2020-05,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-05,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-05,San Juan,Total,Total recursos provinciales,34823170543,,Carga de usuario
+2020-06,San Juan,Ingresos Brutos,Impuesto provincial,20391809106,,Carga de usuario
+2020-06,San Juan,Inmobiliario,Impuesto provincial,1463276977,,Carga de usuario
+2020-06,San Juan,Automotor,Impuesto provincial,3628520139,,Carga de usuario
+2020-06,San Juan,Sellos,Impuesto provincial,2269596169,,Carga de usuario
+2020-06,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-06,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-06,San Juan,Total,Total recursos provinciales,31914324277,,Carga de usuario
+2020-07,San Juan,Ingresos Brutos,Impuesto provincial,21217653296,,Carga de usuario
+2020-07,San Juan,Inmobiliario,Impuesto provincial,1410503699,,Carga de usuario
+2020-07,San Juan,Automotor,Impuesto provincial,3651990660,,Carga de usuario
+2020-07,San Juan,Sellos,Impuesto provincial,2064633891,,Carga de usuario
+2020-07,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-07,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-07,San Juan,Total,Total recursos provinciales,32553611119,,Carga de usuario
+2020-08,San Juan,Ingresos Brutos,Impuesto provincial,21413848365,,Carga de usuario
+2020-08,San Juan,Inmobiliario,Impuesto provincial,1405168010,,Carga de usuario
+2020-08,San Juan,Automotor,Impuesto provincial,3199220291,,Carga de usuario
+2020-08,San Juan,Sellos,Impuesto provincial,2258865932,,Carga de usuario
+2020-08,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-08,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-08,San Juan,Total,Total recursos provinciales,32462734758,,Carga de usuario
+2020-09,San Juan,Ingresos Brutos,Impuesto provincial,21055079649,,Carga de usuario
+2020-09,San Juan,Inmobiliario,Impuesto provincial,1104299875,,Carga de usuario
+2020-09,San Juan,Automotor,Impuesto provincial,2688026574,,Carga de usuario
+2020-09,San Juan,Sellos,Impuesto provincial,2125454579,,Carga de usuario
+2020-09,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-09,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-09,San Juan,Total,Total recursos provinciales,31038685892,,Carga de usuario
+2020-10,San Juan,Ingresos Brutos,Impuesto provincial,21844088618,,Carga de usuario
+2020-10,San Juan,Inmobiliario,Impuesto provincial,1293479621,,Carga de usuario
+2020-10,San Juan,Automotor,Impuesto provincial,2865732406,,Carga de usuario
+2020-10,San Juan,Sellos,Impuesto provincial,2202939794,,Carga de usuario
+2020-10,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-10,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-10,San Juan,Total,Total recursos provinciales,32383688290,,Carga de usuario
+2020-11,San Juan,Ingresos Brutos,Impuesto provincial,22448144350,,Carga de usuario
+2020-11,San Juan,Inmobiliario,Impuesto provincial,1222481422,,Carga de usuario
+2020-11,San Juan,Automotor,Impuesto provincial,2584364304,,Carga de usuario
+2020-11,San Juan,Sellos,Impuesto provincial,2221654600,,Carga de usuario
+2020-11,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-11,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-11,San Juan,Total,Total recursos provinciales,32943079547,,Carga de usuario
+2020-12,San Juan,Ingresos Brutos,Impuesto provincial,24514763926,,Carga de usuario
+2020-12,San Juan,Inmobiliario,Impuesto provincial,1222258369,,Carga de usuario
+2020-12,San Juan,Automotor,Impuesto provincial,2583440828,,Carga de usuario
+2020-12,San Juan,Sellos,Impuesto provincial,2521891826,,Carga de usuario
+2020-12,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2020-12,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2020-12,San Juan,Total,Total recursos provinciales,35404961092,,Carga de usuario
+2021-01,San Juan,Ingresos Brutos,Impuesto provincial,26231165075,2.6,Carga de usuario
+2021-01,San Juan,Inmobiliario,Impuesto provincial,787726702.30,-38.4,Carga de usuario
+2021-01,San Juan,Automotor,Impuesto provincial,1585012449,-22.2,Carga de usuario
+2021-01,San Juan,Sellos,Impuesto provincial,2624829059,2.5,Carga de usuario
+2021-01,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2021-01,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2021-01,San Juan,Total,Total recursos provinciales,36138336349,-0.4,Carga de usuario
+2021-02,San Juan,Ingresos Brutos,Impuesto provincial,22589065670,4.6,Carga de usuario
+2021-02,San Juan,Inmobiliario,Impuesto provincial,6973934502,130.4,Carga de usuario
+2021-02,San Juan,Automotor,Impuesto provincial,2096832709,13.2,Carga de usuario
+2021-02,San Juan,Sellos,Impuesto provincial,2401833048,1.3,Carga de usuario
+2021-02,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2021-02,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2021-02,San Juan,Total,Total recursos provinciales,38457709259,16.0,Carga de usuario
+2021-03,San Juan,Ingresos Brutos,Impuesto provincial,22806060947,5.4,Carga de usuario
+2021-03,San Juan,Inmobiliario,Impuesto provincial,1763912412,-20.8,Carga de usuario
+2021-03,San Juan,Automotor,Impuesto provincial,10590087724,215.1,Carga de usuario
+2021-03,San Juan,Sellos,Impuesto provincial,3291587650,58.3,Carga de usuario
+2021-03,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2021-03,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2021-03,San Juan,Total,Total recursos provinciales,43913827649,39.0,Carga de usuario
+2021-04,San Juan,Ingresos Brutos,Impuesto provincial,26109533076,17.8,Carga de usuario
+2021-04,San Juan,Inmobiliario,Impuesto provincial,1163440119,-49.8,Carga de usuario
+2021-04,San Juan,Automotor,Impuesto provincial,3458726719,22.1,Carga de usuario
+2021-04,San Juan,Sellos,Impuesto provincial,2741352122,62.3,Carga de usuario
+2021-04,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2021-04,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2021-04,San Juan,Total,Total recursos provinciales,38613290900,17.4,Carga de usuario
+2021-05,San Juan,Ingresos Brutos,Impuesto provincial,23209085298,16.0,Carga de usuario
+2021-05,San Juan,Inmobiliario,Impuesto provincial,1014535751,-51.2,Carga de usuario
+2021-05,San Juan,Automotor,Impuesto provincial,2814179138,-58.0,Carga de usuario
+2021-05,San Juan,Sellos,Impuesto provincial,2309429499,28.0,Carga de usuario
+2021-05,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2021-05,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2021-05,San Juan,Total,Total recursos provinciales,33876989851,-2.7,Carga de usuario
+2021-06,San Juan,Ingresos Brutos,Impuesto provincial,25024878646,22.7,Carga de usuario
+2021-06,San Juan,Inmobiliario,Impuesto provincial,1131027322,-22.7,Carga de usuario
+2021-06,San Juan,Automotor,Impuesto provincial,3310146672,-8.8,Carga de usuario
+2021-06,San Juan,Sellos,Impuesto provincial,2491286850,9.8,Carga de usuario
+2021-06,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2021-06,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2021-06,San Juan,Total,Total recursos provinciales,36714594687,15.0,Carga de usuario
+2021-07,San Juan,Ingresos Brutos,Impuesto provincial,25596286879,20.6,Carga de usuario
+2021-07,San Juan,Inmobiliario,Impuesto provincial,1249370988,-11.4,Carga de usuario
+2021-07,San Juan,Automotor,Impuesto provincial,3644175468,-0.2,Carga de usuario
+2021-07,San Juan,Sellos,Impuesto provincial,2562795098,24.1,Carga de usuario
+2021-07,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2021-07,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2021-07,San Juan,Total,Total recursos provinciales,38073909380,17.0,Carga de usuario
+2021-08,San Juan,Ingresos Brutos,Impuesto provincial,25376714534,18.5,Carga de usuario
+2021-08,San Juan,Inmobiliario,Impuesto provincial,1386135179,-1.4,Carga de usuario
+2021-08,San Juan,Automotor,Impuesto provincial,4052037416,26.7,Carga de usuario
+2021-08,San Juan,Sellos,Impuesto provincial,2582969545,14.3,Carga de usuario
+2021-08,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2021-08,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2021-08,San Juan,Total,Total recursos provinciales,38442384006,18.4,Carga de usuario
+2021-09,San Juan,Ingresos Brutos,Impuesto provincial,26993468734,28.2,Carga de usuario
+2021-09,San Juan,Inmobiliario,Impuesto provincial,1138099002,3.1,Carga de usuario
+2021-09,San Juan,Automotor,Impuesto provincial,3198015379,19.0,Carga de usuario
+2021-09,San Juan,Sellos,Impuesto provincial,2618307634,23.2,Carga de usuario
+2021-09,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2021-09,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2021-09,San Juan,Total,Total recursos provinciales,39122089089,26.0,Carga de usuario
+2021-10,San Juan,Ingresos Brutos,Impuesto provincial,26285585149,20.3,Carga de usuario
+2021-10,San Juan,Inmobiliario,Impuesto provincial,887793942.90,-31.4,Carga de usuario
+2021-10,San Juan,Automotor,Impuesto provincial,3012923550,5.1,Carga de usuario
+2021-10,San Juan,Sellos,Impuesto provincial,3025592096,37.3,Carga de usuario
+2021-10,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2021-10,San Juan,Otros impuestos,Otros recursos provinciales,0,,Carga de usuario
+2021-10,San Juan,Total,Total recursos provinciales,38486158904,18.8,Carga de usuario
+2021-11,San Juan,Ingresos Brutos,Impuesto provincial,27760092094,23.7,Carga de usuario
+2021-11,San Juan,Inmobiliario,Impuesto provincial,954587328.80,-21.9,Carga de usuario
+2021-11,San Juan,Automotor,Impuesto provincial,3093521716,19.7,Carga de usuario
+2021-11,San Juan,Sellos,Impuesto provincial,2540992782,14.4,Carga de usuario
+2021-11,San Juan,DJ,Otros recursos provinciales,975727.03,,Carga de usuario
+2021-11,San Juan,Otros impuestos,Otros recursos provinciales,4767821638,,Carga de usuario
+2021-11,San Juan,Total,Total recursos provinciales,39117991286,18.7,Carga de usuario
+2021-12,San Juan,Ingresos Brutos,Impuesto provincial,25837564150,5.4,Carga de usuario
+2021-12,San Juan,Inmobiliario,Impuesto provincial,1014090450,-17.0,Carga de usuario
+2021-12,San Juan,Automotor,Impuesto provincial,3152656114,22.0,Carga de usuario
+2021-12,San Juan,Sellos,Impuesto provincial,2482554857,-1.6,Carga de usuario
+2021-12,San Juan,DJ,Otros recursos provinciales,10935185.22,,Carga de usuario
+2021-12,San Juan,Otros impuestos,Otros recursos provinciales,4465148956,,Carga de usuario
+2021-12,San Juan,Total,Total recursos provinciales,36962949712,4.4,Carga de usuario
+2022-01,San Juan,Ingresos Brutos,Impuesto provincial,28823642338,9.9,Carga de usuario
+2022-01,San Juan,Inmobiliario,Impuesto provincial,1384648207,75.8,Carga de usuario
+2022-01,San Juan,Automotor,Impuesto provincial,2032080598,28.2,Carga de usuario
+2022-01,San Juan,Sellos,Impuesto provincial,2348122685,-10.5,Carga de usuario
+2022-01,San Juan,DJ,Otros recursos provinciales,997268.84,,Carga de usuario
+2022-01,San Juan,Otros impuestos,Otros recursos provinciales,4738944050,,Carga de usuario
+2022-01,San Juan,Total,Total recursos provinciales,39328435146,8.8,Carga de usuario
+2022-02,San Juan,Ingresos Brutos,Impuesto provincial,23522534796,4.1,Carga de usuario
+2022-02,San Juan,Inmobiliario,Impuesto provincial,6311587651,-9.5,Carga de usuario
+2022-02,San Juan,Automotor,Impuesto provincial,1702912044,-18.8,Carga de usuario
+2022-02,San Juan,Sellos,Impuesto provincial,2386189662,-0.7,Carga de usuario
+2022-02,San Juan,DJ,Otros recursos provinciales,1772472.26,,Carga de usuario
+2022-02,San Juan,Otros impuestos,Otros recursos provinciales,4244279958,,Carga de usuario
+2022-02,San Juan,Total,Total recursos provinciales,38169276583,-0.7,Carga de usuario
+2022-03,San Juan,Ingresos Brutos,Impuesto provincial,25944063081,13.8,Carga de usuario
+2022-03,San Juan,Inmobiliario,Impuesto provincial,1605973719,-9.0,Carga de usuario
+2022-03,San Juan,Automotor,Impuesto provincial,13242342624,25.0,Carga de usuario
+2022-03,San Juan,Sellos,Impuesto provincial,2507987660,-23.8,Carga de usuario
+2022-03,San Juan,DJ,Otros recursos provinciales,1441269.31,,Carga de usuario
+2022-03,San Juan,Otros impuestos,Otros recursos provinciales,5335059161,,Carga de usuario
+2022-03,San Juan,Total,Total recursos provinciales,48636867514,10.8,Carga de usuario
+2022-04,San Juan,Ingresos Brutos,Impuesto provincial,25893696236,-0.8,Carga de usuario
+2022-04,San Juan,Inmobiliario,Impuesto provincial,1205077848,3.6,Carga de usuario
+2022-04,San Juan,Automotor,Impuesto provincial,5014846011,45.0,Carga de usuario
+2022-04,San Juan,Sellos,Impuesto provincial,2341738760,-14.6,Carga de usuario
+2022-04,San Juan,DJ,Otros recursos provinciales,888546.43,,Carga de usuario
+2022-04,San Juan,Otros impuestos,Otros recursos provinciales,4543239438,,Carga de usuario
+2022-04,San Juan,Total,Total recursos provinciales,38999486839,1.0,Carga de usuario
+2022-05,San Juan,Ingresos Brutos,Impuesto provincial,26485368004,14.1,Carga de usuario
+2022-05,San Juan,Inmobiliario,Impuesto provincial,1189895271,17.3,Carga de usuario
+2022-05,San Juan,Automotor,Impuesto provincial,3915500420,39.1,Carga de usuario
+2022-05,San Juan,Sellos,Impuesto provincial,2515774805,8.9,Carga de usuario
+2022-05,San Juan,DJ,Otros recursos provinciales,1955533.64,,Carga de usuario
+2022-05,San Juan,Otros impuestos,Otros recursos provinciales,4591055763,,Carga de usuario
+2022-05,San Juan,Total,Total recursos provinciales,38699549797,14.2,Carga de usuario
+2022-06,San Juan,Ingresos Brutos,Impuesto provincial,25981945764,3.8,Carga de usuario
+2022-06,San Juan,Inmobiliario,Impuesto provincial,1159408203,2.5,Carga de usuario
+2022-06,San Juan,Automotor,Impuesto provincial,3758520317,13.5,Carga de usuario
+2022-06,San Juan,Sellos,Impuesto provincial,2226006639,-10.6,Carga de usuario
+2022-06,San Juan,DJ,Otros recursos provinciales,3567795.08,,Carga de usuario
+2022-06,San Juan,Otros impuestos,Otros recursos provinciales,4484914621,,Carga de usuario
+2022-06,San Juan,Total,Total recursos provinciales,37614363339,2.5,Carga de usuario
+2022-07,San Juan,Ingresos Brutos,Impuesto provincial,28621461792,11.8,Carga de usuario
+2022-07,San Juan,Inmobiliario,Impuesto provincial,1297546577,3.9,Carga de usuario
+2022-07,San Juan,Automotor,Impuesto provincial,4055550526,11.3,Carga de usuario
+2022-07,San Juan,Sellos,Impuesto provincial,2578070155,0.6,Carga de usuario
+2022-07,San Juan,DJ,Otros recursos provinciales,4343447.12,,Carga de usuario
+2022-07,San Juan,Otros impuestos,Otros recursos provinciales,4789937806,,Carga de usuario
+2022-07,San Juan,Total,Total recursos provinciales,41346910303,8.6,Carga de usuario
+2022-08,San Juan,Ingresos Brutos,Impuesto provincial,27052676138,6.6,Carga de usuario
+2022-08,San Juan,Inmobiliario,Impuesto provincial,1368379170,-1.3,Carga de usuario
+2022-08,San Juan,Automotor,Impuesto provincial,4330527200,6.9,Carga de usuario
+2022-08,San Juan,Sellos,Impuesto provincial,2595786371,0.5,Carga de usuario
+2022-08,San Juan,DJ,Otros recursos provinciales,3541877.17,,Carga de usuario
+2022-08,San Juan,Otros impuestos,Otros recursos provinciales,4826725588,,Carga de usuario
+2022-08,San Juan,Total,Total recursos provinciales,40177636344,4.5,Carga de usuario
+2022-09,San Juan,Ingresos Brutos,Impuesto provincial,26100795658,-3.3,Carga de usuario
+2022-09,San Juan,Inmobiliario,Impuesto provincial,879541856.10,-22.7,Carga de usuario
+2022-09,San Juan,Automotor,Impuesto provincial,3434075311,7.4,Carga de usuario
+2022-09,San Juan,Sellos,Impuesto provincial,2883505879,10.1,Carga de usuario
+2022-09,San Juan,DJ,Otros recursos provinciales,3442019.17,,Carga de usuario
+2022-09,San Juan,Otros impuestos,Otros recursos provinciales,4704793512,,Carga de usuario
+2022-09,San Juan,Total,Total recursos provinciales,38006154236,-2.9,Carga de usuario
+2022-10,San Juan,Ingresos Brutos,Impuesto provincial,25513171773,-2.9,Carga de usuario
+2022-10,San Juan,Inmobiliario,Impuesto provincial,859546051.80,-3.2,Carga de usuario
+2022-10,San Juan,Automotor,Impuesto provincial,3074649405,2.0,Carga de usuario
+2022-10,San Juan,Sellos,Impuesto provincial,2492219664,-17.6,Carga de usuario
+2022-10,San Juan,DJ,Otros recursos provinciales,2698255.12,,Carga de usuario
+2022-10,San Juan,Otros impuestos,Otros recursos provinciales,4616463641,,Carga de usuario
+2022-10,San Juan,Total,Total recursos provinciales,36558748791,-5.0,Carga de usuario
+2022-11,San Juan,Ingresos Brutos,Impuesto provincial,26308672577,-5.2,Carga de usuario
+2022-11,San Juan,Inmobiliario,Impuesto provincial,818932480.90,-14.2,Carga de usuario
+2022-11,San Juan,Automotor,Impuesto provincial,3020281725,-2.4,Carga de usuario
+2022-11,San Juan,Sellos,Impuesto provincial,2585091728,1.7,Carga de usuario
+2022-11,San Juan,DJ,Otros recursos provinciales,1517277.89,55.5,Carga de usuario
+2022-11,San Juan,Otros impuestos,Otros recursos provinciales,4088813374,-14.2,Carga de usuario
+2022-11,San Juan,Total,Total recursos provinciales,36823309162,-5.9,Carga de usuario
+2022-12,San Juan,Ingresos Brutos,Impuesto provincial,24826968815,-3.9,Carga de usuario
+2022-12,San Juan,Inmobiliario,Impuesto provincial,726063514.50,-28.4,Carga de usuario
+2022-12,San Juan,Automotor,Impuesto provincial,4564329961,44.8,Carga de usuario
+2022-12,San Juan,Sellos,Impuesto provincial,2185147011,-12.0,Carga de usuario
+2022-12,San Juan,DJ,Otros recursos provinciales,9420895.81,-13.8,Carga de usuario
+2022-12,San Juan,Otros impuestos,Otros recursos provinciales,4462458425,-0.1,Carga de usuario
+2022-12,San Juan,Total,Total recursos provinciales,36774388622,-0.5,Carga de usuario
+2023-01,San Juan,Ingresos Brutos,Impuesto provincial,31675323924,9.9,Carga de usuario
+2023-01,San Juan,Inmobiliario,Impuesto provincial,999460718.60,-27.8,Carga de usuario
+2023-01,San Juan,Automotor,Impuesto provincial,441773413.50,-78.3,Carga de usuario
+2023-01,San Juan,Sellos,Impuesto provincial,3150641134,34.2,Carga de usuario
+2023-01,San Juan,DJ,Otros recursos provinciales,116492.05,-88.3,Carga de usuario
+2023-01,San Juan,Otros impuestos,Otros recursos provinciales,3522443476,-25.7,Carga de usuario
+2023-01,San Juan,Total,Total recursos provinciales,39789759158,1.2,Carga de usuario
+2023-02,San Juan,Ingresos Brutos,Impuesto provincial,24061194518,2.3,Carga de usuario
+2023-02,San Juan,Inmobiliario,Impuesto provincial,5041856101,-20.1,Carga de usuario
+2023-02,San Juan,Automotor,Impuesto provincial,3511795528,106.2,Carga de usuario
+2023-02,San Juan,Sellos,Impuesto provincial,3204143662,34.3,Carga de usuario
+2023-02,San Juan,DJ,Otros recursos provinciales,1138794.81,-35.8,Carga de usuario
+2023-02,San Juan,Otros impuestos,Otros recursos provinciales,3164329468,-25.4,Carga de usuario
+2023-02,San Juan,Total,Total recursos provinciales,38984458072,2.1,Carga de usuario
+2023-03,San Juan,Ingresos Brutos,Impuesto provincial,28531026074,10.0,Carga de usuario
+2023-03,San Juan,Inmobiliario,Impuesto provincial,1802328854,12.2,Carga de usuario
+2023-03,San Juan,Automotor,Impuesto provincial,10405384599,-21.4,Carga de usuario
+2023-03,San Juan,Sellos,Impuesto provincial,3932540127,56.8,Carga de usuario
+2023-03,San Juan,DJ,Otros recursos provinciales,2397449.89,66.3,Carga de usuario
+2023-03,San Juan,Otros impuestos,Otros recursos provinciales,3734290530,-30.0,Carga de usuario
+2023-03,San Juan,Total,Total recursos provinciales,48407967634,-0.5,Carga de usuario
+2023-04,San Juan,Ingresos Brutos,Impuesto provincial,28036788924,8.3,Carga de usuario
+2023-04,San Juan,Inmobiliario,Impuesto provincial,1035422460,-14.1,Carga de usuario
+2023-04,San Juan,Automotor,Impuesto provincial,3732229950,-25.6,Carga de usuario
+2023-04,San Juan,Sellos,Impuesto provincial,3199264928,36.6,Carga de usuario
+2023-04,San Juan,DJ,Otros recursos provinciales,5402031.98,508.0,Carga de usuario
+2023-04,San Juan,Otros impuestos,Otros recursos provinciales,2765471688,-39.1,Carga de usuario
+2023-04,San Juan,Total,Total recursos provinciales,38774579982,-0.6,Carga de usuario
+2023-05,San Juan,Ingresos Brutos,Impuesto provincial,29251723519,10.4,Carga de usuario
+2023-05,San Juan,Inmobiliario,Impuesto provincial,1063474297,-10.6,Carga de usuario
+2023-05,San Juan,Automotor,Impuesto provincial,3573888497,-8.7,Carga de usuario
+2023-05,San Juan,Sellos,Impuesto provincial,3149711187,25.2,Carga de usuario
+2023-05,San Juan,DJ,Otros recursos provinciales,1207461.29,-38.3,Carga de usuario
+2023-05,San Juan,Otros impuestos,Otros recursos provinciales,2991376495,-34.8,Carga de usuario
+2023-05,San Juan,Total,Total recursos provinciales,40031381457,3.4,Carga de usuario
+2023-06,San Juan,Ingresos Brutos,Impuesto provincial,28109548796,8.2,Carga de usuario
+2023-06,San Juan,Inmobiliario,Impuesto provincial,996776521.10,-14.0,Carga de usuario
+2023-06,San Juan,Automotor,Impuesto provincial,3438327988,-8.5,Carga de usuario
+2023-06,San Juan,Sellos,Impuesto provincial,4479322119,101.2,Carga de usuario
+2023-06,San Juan,DJ,Otros recursos provinciales,2787602.98,-21.9,Carga de usuario
+2023-06,San Juan,Otros impuestos,Otros recursos provinciales,2535385127,-43.5,Carga de usuario
+2023-06,San Juan,Total,Total recursos provinciales,39562148154,5.2,Carga de usuario
+2023-07,San Juan,Ingresos Brutos,Impuesto provincial,28975669801,1.2,Carga de usuario
+2023-07,San Juan,Inmobiliario,Impuesto provincial,1071748625,-17.4,Carga de usuario
+2023-07,San Juan,Automotor,Impuesto provincial,3869689168,-4.6,Carga de usuario
+2023-07,San Juan,Sellos,Impuesto provincial,3732883781,44.8,Carga de usuario
+2023-07,San Juan,DJ,Otros recursos provinciales,660458.61,-84.8,Carga de usuario
+2023-07,San Juan,Otros impuestos,Otros recursos provinciales,3240913503,-32.3,Carga de usuario
+2023-07,San Juan,Total,Total recursos provinciales,40891565336,-1.1,Carga de usuario
+2023-08,San Juan,Ingresos Brutos,Impuesto provincial,27062579414,0.0,Carga de usuario
+2023-08,San Juan,Inmobiliario,Impuesto provincial,1061207735,-22.4,Carga de usuario
+2023-08,San Juan,Automotor,Impuesto provincial,3842157994,-11.3,Carga de usuario
+2023-08,San Juan,Sellos,Impuesto provincial,3408586830,31.3,Carga de usuario
+2023-08,San Juan,DJ,Otros recursos provinciales,349738.32,-90.1,Carga de usuario
+2023-08,San Juan,Otros impuestos,Otros recursos provinciales,2989110677,-38.1,Carga de usuario
+2023-08,San Juan,Total,Total recursos provinciales,38363992387,-4.5,Carga de usuario
+2023-09,San Juan,Ingresos Brutos,Impuesto provincial,28335117095,8.6,Carga de usuario
+2023-09,San Juan,Inmobiliario,Impuesto provincial,737992598.90,-16.1,Carga de usuario
+2023-09,San Juan,Automotor,Impuesto provincial,2702179302,-21.3,Carga de usuario
+2023-09,San Juan,Sellos,Impuesto provincial,3447591947,19.6,Carga de usuario
+2023-09,San Juan,DJ,Otros recursos provinciales,4361417.99,26.7,Carga de usuario
+2023-09,San Juan,Otros impuestos,Otros recursos provinciales,2976526935,-36.7,Carga de usuario
+2023-09,San Juan,Total,Total recursos provinciales,38203769296,0.5,Carga de usuario
+2023-10,San Juan,Ingresos Brutos,Impuesto provincial,30372698130,19.0,Carga de usuario
+2023-10,San Juan,Inmobiliario,Impuesto provincial,678708025.10,-21.0,Carga de usuario
+2023-10,San Juan,Automotor,Impuesto provincial,2663766326,-13.4,Carga de usuario
+2023-10,San Juan,Sellos,Impuesto provincial,3280986132,31.6,Carga de usuario
+2023-10,San Juan,DJ,Otros recursos provinciales,6388411.00,136.8,Carga de usuario
+2023-10,San Juan,Otros impuestos,Otros recursos provinciales,3019488278,-34.6,Carga de usuario
+2023-10,San Juan,Total,Total recursos provinciales,40022035302,9.5,Carga de usuario
+2023-11,San Juan,Ingresos Brutos,Impuesto provincial,28586570869,8.7,Carga de usuario
+2023-11,San Juan,Inmobiliario,Impuesto provincial,579976460.30,-29.2,Carga de usuario
+2023-11,San Juan,Automotor,Impuesto provincial,2471312152,-18.2,Carga de usuario
+2023-11,San Juan,Sellos,Impuesto provincial,2864748428,10.8,Carga de usuario
+2023-11,San Juan,DJ,Otros recursos provinciales,2666763.75,75.8,Carga de usuario
+2023-11,San Juan,Otros impuestos,Otros recursos provinciales,3691102791,-9.7,Carga de usuario
+2023-11,San Juan,Total,Total recursos provinciales,38196377464,3.7,Carga de usuario
+2023-12,San Juan,Ingresos Brutos,Impuesto provincial,25271403071,1.8,Carga de usuario
+2023-12,San Juan,Inmobiliario,Impuesto provincial,513295802.10,-29.3,Carga de usuario
+2023-12,San Juan,Automotor,Impuesto provincial,2232297567,-51.1,Carga de usuario
+2023-12,San Juan,Sellos,Impuesto provincial,2870609483,31.4,Carga de usuario
+2023-12,San Juan,DJ,Otros recursos provinciales,634419.15,-93.3,Carga de usuario
+2023-12,San Juan,Otros impuestos,Otros recursos provinciales,2273448727,-49.1,Carga de usuario
+2023-12,San Juan,Total,Total recursos provinciales,33161689069,-9.8,Carga de usuario
+2024-01,San Juan,Ingresos Brutos,Impuesto provincial,26743528756,-15.6,Carga de usuario
+2024-01,San Juan,Inmobiliario,Impuesto provincial,974887410.10,-2.5,Carga de usuario
+2024-01,San Juan,Automotor,Impuesto provincial,1777493006,302.4,Carga de usuario
+2024-01,San Juan,Sellos,Impuesto provincial,2332153610,-26.0,Carga de usuario
+2024-01,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2024-01,San Juan,Otros impuestos,Otros recursos provinciales,2721784463,-22.7,Carga de usuario
+2024-01,San Juan,Total,Total recursos provinciales,34549847245,-13.2,Carga de usuario
+2024-02,San Juan,Ingresos Brutos,Impuesto provincial,24996797499,3.9,Carga de usuario
+2024-02,San Juan,Inmobiliario,Impuesto provincial,2404080843,-52.3,Carga de usuario
+2024-02,San Juan,Automotor,Impuesto provincial,992384667.20,-71.7,Carga de usuario
+2024-02,San Juan,Sellos,Impuesto provincial,2436982361,-23.9,Carga de usuario
+2024-02,San Juan,DJ,Otros recursos provinciales,1516519.27,33.2,Carga de usuario
+2024-02,San Juan,Otros impuestos,Otros recursos provinciales,2414435179,-23.7,Carga de usuario
+2024-02,San Juan,Total,Total recursos provinciales,33246197069,-14.7,Carga de usuario
+2024-03,San Juan,Ingresos Brutos,Impuesto provincial,25428046697,-10.9,Carga de usuario
+2024-03,San Juan,Inmobiliario,Impuesto provincial,941178075.80,-47.8,Carga de usuario
+2024-03,San Juan,Automotor,Impuesto provincial,880731261.70,-91.5,Carga de usuario
+2024-03,San Juan,Sellos,Impuesto provincial,2461920689,-37.4,Carga de usuario
+2024-03,San Juan,DJ,Otros recursos provinciales,15291.60,-99.4,Carga de usuario
+2024-03,San Juan,Otros impuestos,Otros recursos provinciales,2327150529,-37.7,Carga de usuario
+2024-03,San Juan,Total,Total recursos provinciales,32039042544,-33.8,Carga de usuario
+2024-04,San Juan,Ingresos Brutos,Impuesto provincial,25475136246,-9.1,Carga de usuario
+2024-04,San Juan,Inmobiliario,Impuesto provincial,660399036.40,-36.2,Carga de usuario
+2024-04,San Juan,Automotor,Impuesto provincial,810437010.60,-78.3,Carga de usuario
+2024-04,San Juan,Sellos,Impuesto provincial,2242563813,-29.9,Carga de usuario
+2024-04,San Juan,DJ,Otros recursos provinciales,107323.06,-98.0,Carga de usuario
+2024-04,San Juan,Otros impuestos,Otros recursos provinciales,2244319276,-18.8,Carga de usuario
+2024-04,San Juan,Total,Total recursos provinciales,31432962706,-18.9,Carga de usuario
+2024-05,San Juan,Ingresos Brutos,Impuesto provincial,25932176682,-11.3,Carga de usuario
+2024-05,San Juan,Inmobiliario,Impuesto provincial,864165051.40,-18.7,Carga de usuario
+2024-05,San Juan,Automotor,Impuesto provincial,8439968882,136.2,Carga de usuario
+2024-05,San Juan,Sellos,Impuesto provincial,2291235540,-27.3,Carga de usuario
+2024-05,San Juan,DJ,Otros recursos provinciales,138415.25,-88.5,Carga de usuario
+2024-05,San Juan,Otros impuestos,Otros recursos provinciales,2947717243,-1.5,Carga de usuario
+2024-05,San Juan,Total,Total recursos provinciales,40475401815,1.1,Carga de usuario
+2024-06,San Juan,Ingresos Brutos,Impuesto provincial,23832944506,-15.2,Carga de usuario
+2024-06,San Juan,Inmobiliario,Impuesto provincial,918432974.10,-7.9,Carga de usuario
+2024-06,San Juan,Automotor,Impuesto provincial,3512145991,2.1,Carga de usuario
+2024-06,San Juan,Sellos,Impuesto provincial,2227356806,-50.3,Carga de usuario
+2024-06,San Juan,DJ,Otros recursos provinciales,299158.02,-89.3,Carga de usuario
+2024-06,San Juan,Otros impuestos,Otros recursos provinciales,2307857552,-9.0,Carga de usuario
+2024-06,San Juan,Total,Total recursos provinciales,32799036988,-17.1,Carga de usuario
+2024-07,San Juan,Ingresos Brutos,Impuesto provincial,24021364432,-17.1,Carga de usuario
+2024-07,San Juan,Inmobiliario,Impuesto provincial,1942010440,81.2,Carga de usuario
+2024-07,San Juan,Automotor,Impuesto provincial,4559766487,17.8,Carga de usuario
+2024-07,San Juan,Sellos,Impuesto provincial,2052393932,-45.0,Carga de usuario
+2024-07,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2024-07,San Juan,Otros impuestos,Otros recursos provinciales,2341552800,-27.8,Carga de usuario
+2024-07,San Juan,Total,Total recursos provinciales,34917088091,-14.6,Carga de usuario
+2024-08,San Juan,Ingresos Brutos,Impuesto provincial,24382783035,-9.9,Carga de usuario
+2024-08,San Juan,Inmobiliario,Impuesto provincial,1182315907,11.4,Carga de usuario
+2024-08,San Juan,Automotor,Impuesto provincial,3215538150,-16.3,Carga de usuario
+2024-08,San Juan,Sellos,Impuesto provincial,2658554283,-22.0,Carga de usuario
+2024-08,San Juan,DJ,Otros recursos provinciales,324974.23,-7.1,Carga de usuario
+2024-08,San Juan,Otros impuestos,Otros recursos provinciales,2269446913,-24.1,Carga de usuario
+2024-08,San Juan,Total,Total recursos provinciales,33708963263,-12.1,Carga de usuario
+2024-09,San Juan,Ingresos Brutos,Impuesto provincial,24329049932,-14.1,Carga de usuario
+2024-09,San Juan,Inmobiliario,Impuesto provincial,599999410.20,-18.7,Carga de usuario
+2024-09,San Juan,Automotor,Impuesto provincial,2603963772,-3.6,Carga de usuario
+2024-09,San Juan,Sellos,Impuesto provincial,2472419232,-28.3,Carga de usuario
+2024-09,San Juan,DJ,Otros recursos provinciales,41011.01,-99.1,Carga de usuario
+2024-09,San Juan,Otros impuestos,Otros recursos provinciales,2170779094,-27.1,Carga de usuario
+2024-09,San Juan,Total,Total recursos provinciales,32176252451,-15.8,Carga de usuario
+2024-10,San Juan,Ingresos Brutos,Impuesto provincial,23684326442,-22.0,Carga de usuario
+2024-10,San Juan,Inmobiliario,Impuesto provincial,547797223.40,-19.3,Carga de usuario
+2024-10,San Juan,Automotor,Impuesto provincial,2288737516,-14.1,Carga de usuario
+2024-10,San Juan,Sellos,Impuesto provincial,2685843041,-18.1,Carga de usuario
+2024-10,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2024-10,San Juan,Otros impuestos,Otros recursos provinciales,2156110465,-28.6,Carga de usuario
+2024-10,San Juan,Total,Total recursos provinciales,31371207527,-21.6,Carga de usuario
+2024-11,San Juan,Ingresos Brutos,Impuesto provincial,25137722660,-12.1,Carga de usuario
+2024-11,San Juan,Inmobiliario,Impuesto provincial,435935164.40,-24.8,Carga de usuario
+2024-11,San Juan,Automotor,Impuesto provincial,1979284991,-19.9,Carga de usuario
+2024-11,San Juan,Sellos,Impuesto provincial,2573516097,-10.2,Carga de usuario
+2024-11,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2024-11,San Juan,Otros impuestos,Otros recursos provinciales,2058200532,-44.2,Carga de usuario
+2024-11,San Juan,Total,Total recursos provinciales,32184673741,-15.7,Carga de usuario
+2024-12,San Juan,Ingresos Brutos,Impuesto provincial,24118776783,-4.6,Carga de usuario
+2024-12,San Juan,Inmobiliario,Impuesto provincial,378414161.20,-26.3,Carga de usuario
+2024-12,San Juan,Automotor,Impuesto provincial,2008568020,-10.0,Carga de usuario
+2024-12,San Juan,Sellos,Impuesto provincial,2664838512,-7.2,Carga de usuario
+2024-12,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2024-12,San Juan,Otros impuestos,Otros recursos provinciales,2158022941,-5.1,Carga de usuario
+2024-12,San Juan,Total,Total recursos provinciales,31328647989,-5.5,Carga de usuario
+2025-01,San Juan,Ingresos Brutos,Impuesto provincial,27252271698,1.9,Carga de usuario
+2025-01,San Juan,Inmobiliario,Impuesto provincial,264216660.70,-72.9,Carga de usuario
+2025-01,San Juan,Automotor,Impuesto provincial,1488600857,-16.3,Carga de usuario
+2025-01,San Juan,Sellos,Impuesto provincial,3033522611,30.1,Carga de usuario
+2025-01,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2025-01,San Juan,Otros impuestos,Otros recursos provinciales,2537292510,-6.8,Carga de usuario
+2025-01,San Juan,Total,Total recursos provinciales,34575904336,0.1,Carga de usuario
+2025-02,San Juan,Ingresos Brutos,Impuesto provincial,25414865892,1.7,Carga de usuario
+2025-02,San Juan,Inmobiliario,Impuesto provincial,2557759282,6.4,Carga de usuario
+2025-02,San Juan,Automotor,Impuesto provincial,1051479173,6.0,Carga de usuario
+2025-02,San Juan,Sellos,Impuesto provincial,2895140950,18.8,Carga de usuario
+2025-02,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2025-02,San Juan,Otros impuestos,Otros recursos provinciales,2069386784,-14.3,Carga de usuario
+2025-02,San Juan,Total,Total recursos provinciales,33988632080,2.2,Carga de usuario
+2025-03,San Juan,Ingresos Brutos,Impuesto provincial,24498043827,-3.7,Carga de usuario
+2025-03,San Juan,Inmobiliario,Impuesto provincial,1338665565,42.2,Carga de usuario
+2025-03,San Juan,Automotor,Impuesto provincial,1002130172,13.8,Carga de usuario
+2025-03,San Juan,Sellos,Impuesto provincial,3042735062,23.6,Carga de usuario
+2025-03,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2025-03,San Juan,Otros impuestos,Otros recursos provinciales,2141527171,-8.0,Carga de usuario
+2025-03,San Juan,Total,Total recursos provinciales,32024291973,-0.0,Carga de usuario
+2025-04,San Juan,Ingresos Brutos,Impuesto provincial,25779496082,1.2,Carga de usuario
+2025-04,San Juan,Inmobiliario,Impuesto provincial,735967683.80,11.4,Carga de usuario
+2025-04,San Juan,Automotor,Impuesto provincial,3716673569,358.6,Carga de usuario
+2025-04,San Juan,Sellos,Impuesto provincial,2829088846,26.2,Carga de usuario
+2025-04,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2025-04,San Juan,Otros impuestos,Otros recursos provinciales,2457300188,9.5,Carga de usuario
+2025-04,San Juan,Total,Total recursos provinciales,35518526368,13.0,Carga de usuario
+2025-05,San Juan,Ingresos Brutos,Impuesto provincial,27284195798,5.2,Carga de usuario
+2025-05,San Juan,Inmobiliario,Impuesto provincial,524945083,-39.3,Carga de usuario
+2025-05,San Juan,Automotor,Impuesto provincial,6460554252,-23.5,Carga de usuario
+2025-05,San Juan,Sellos,Impuesto provincial,3256142210,42.1,Carga de usuario
+2025-05,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2025-05,San Juan,Otros impuestos,Otros recursos provinciales,2882017733,-2.2,Carga de usuario
+2025-05,San Juan,Total,Total recursos provinciales,40407881447,-0.2,Carga de usuario
+2025-06,San Juan,Ingresos Brutos,Impuesto provincial,27264282042,14.4,Carga de usuario
+2025-06,San Juan,Inmobiliario,Impuesto provincial,461367739.10,-49.8,Carga de usuario
+2025-06,San Juan,Automotor,Impuesto provincial,2053900495,-41.5,Carga de usuario
+2025-06,San Juan,Sellos,Impuesto provincial,3284254476,47.5,Carga de usuario
+2025-06,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2025-06,San Juan,Otros impuestos,Otros recursos provinciales,2224575227,-3.6,Carga de usuario
+2025-06,San Juan,Total,Total recursos provinciales,35288379979,7.6,Carga de usuario
+2025-07,San Juan,Ingresos Brutos,Impuesto provincial,26568436625,10.6,Carga de usuario
+2025-07,San Juan,Inmobiliario,Impuesto provincial,523656953.20,-73.0,Carga de usuario
+2025-07,San Juan,Automotor,Impuesto provincial,2286514230,-49.9,Carga de usuario
+2025-07,San Juan,Sellos,Impuesto provincial,3459871082,68.6,Carga de usuario
+2025-07,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2025-07,San Juan,Otros impuestos,Otros recursos provinciales,2244693374,-4.1,Carga de usuario
+2025-07,San Juan,Total,Total recursos provinciales,35083172264,0.5,Carga de usuario
+2025-08,San Juan,Ingresos Brutos,Impuesto provincial,27602817034,13.2,Carga de usuario
+2025-08,San Juan,Inmobiliario,Impuesto provincial,536776853.40,-54.6,Carga de usuario
+2025-08,San Juan,Automotor,Impuesto provincial,2257094463,-29.8,Carga de usuario
+2025-08,San Juan,Sellos,Impuesto provincial,3450677376,29.8,Carga de usuario
+2025-08,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2025-08,San Juan,Otros impuestos,Otros recursos provinciales,2237891508,-1.4,Carga de usuario
+2025-08,San Juan,Total,Total recursos provinciales,36085257233,7.0,Carga de usuario
+2025-09,San Juan,Ingresos Brutos,Impuesto provincial,27420106288,12.7,Carga de usuario
+2025-09,San Juan,Inmobiliario,Impuesto provincial,419186430.50,-30.1,Carga de usuario
+2025-09,San Juan,Automotor,Impuesto provincial,1990111906,-23.6,Carga de usuario
+2025-09,San Juan,Sellos,Impuesto provincial,3385416332,36.9,Carga de usuario
+2025-09,San Juan,DJ,Otros recursos provinciales,0,-100.0,Carga de usuario
+2025-09,San Juan,Otros impuestos,Otros recursos provinciales,2081189193,-4.1,Carga de usuario
+2025-09,San Juan,Total,Total recursos provinciales,35296013933,9.7,Carga de usuario
+2025-10,San Juan,Ingresos Brutos,Impuesto provincial,28051528326,18.4,Carga de usuario
+2025-10,San Juan,Inmobiliario,Impuesto provincial,394010472.80,-28.1,Carga de usuario
+2025-10,San Juan,Automotor,Impuesto provincial,1844095603,-19.4,Carga de usuario
+2025-10,San Juan,Sellos,Impuesto provincial,3445284222,28.3,Carga de usuario
+2025-10,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2025-10,San Juan,Otros impuestos,Otros recursos provinciales,2349396361,9.0,Carga de usuario
+2025-10,San Juan,Total,Total recursos provinciales,36084316229,15.0,Carga de usuario
+2025-11,San Juan,Ingresos Brutos,Impuesto provincial,27462459190,9.2,Carga de usuario
+2025-11,San Juan,Inmobiliario,Impuesto provincial,341981311.40,-21.6,Carga de usuario
+2025-11,San Juan,Automotor,Impuesto provincial,1624505042,-17.9,Carga de usuario
+2025-11,San Juan,Sellos,Impuesto provincial,3107825686,20.8,Carga de usuario
+2025-11,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2025-11,San Juan,Otros impuestos,Otros recursos provinciales,2236315211,8.7,Carga de usuario
+2025-11,San Juan,Total,Total recursos provinciales,34773086441,8.0,Carga de usuario
+2025-12,San Juan,Ingresos Brutos,Impuesto provincial,28024804215,16.2,Carga de usuario
+2025-12,San Juan,Inmobiliario,Impuesto provincial,468206373.70,23.7,Carga de usuario
+2025-12,San Juan,Automotor,Impuesto provincial,2224153498,10.7,Carga de usuario
+2025-12,San Juan,Sellos,Impuesto provincial,2886356310,8.3,Carga de usuario
+2025-12,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2025-12,San Juan,Otros impuestos,Otros recursos provinciales,2590283208,20.0,Carga de usuario
+2025-12,San Juan,Total,Total recursos provinciales,36193803604,15.5,Carga de usuario
+2026-01,San Juan,Ingresos Brutos,Impuesto provincial,29454051989,8.1,Carga de usuario
+2026-01,San Juan,Inmobiliario,Impuesto provincial,619396852.90,134.4,Carga de usuario
+2026-01,San Juan,Automotor,Impuesto provincial,1797640670,20.8,Carga de usuario
+2026-01,San Juan,Sellos,Impuesto provincial,3413648487,12.5,Carga de usuario
+2026-01,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2026-01,San Juan,Otros impuestos,Otros recursos provinciales,2041003529,-19.6,Carga de usuario
+2026-01,San Juan,Total,Total recursos provinciales,37325741528,8.0,Carga de usuario
+2026-02,San Juan,Ingresos Brutos,Impuesto provincial,27106400245,6.7,Carga de usuario
+2026-02,San Juan,Inmobiliario,Impuesto provincial,3070943657,20.1,Carga de usuario
+2026-02,San Juan,Automotor,Impuesto provincial,1502447137,42.9,Carga de usuario
+2026-02,San Juan,Sellos,Impuesto provincial,2937792568,1.5,Carga de usuario
+2026-02,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2026-02,San Juan,Otros impuestos,Otros recursos provinciales,271300784.10,-86.9,Carga de usuario
+2026-02,San Juan,Total,Total recursos provinciales,34888884392,2.6,Carga de usuario
+2026-03,San Juan,Ingresos Brutos,Impuesto provincial,25798496878,5.3,Carga de usuario
+2026-03,San Juan,Inmobiliario,Impuesto provincial,1096893199,-18.1,Carga de usuario
+2026-03,San Juan,Automotor,Impuesto provincial,3052611455,204.6,Carga de usuario
+2026-03,San Juan,Sellos,Impuesto provincial,3038766062,-0.1,Carga de usuario
+2026-03,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2026-03,San Juan,Otros impuestos,Otros recursos provinciales,280016828.20,-86.9,Carga de usuario
+2026-03,San Juan,Total,Total recursos provinciales,33266784422,3.9,Carga de usuario
+2026-04,San Juan,Ingresos Brutos,Impuesto provincial,28139111563,9.2,Carga de usuario
+2026-04,San Juan,Inmobiliario,Impuesto provincial,620452595.20,-15.7,Carga de usuario
+2026-04,San Juan,Automotor,Impuesto provincial,7391123506,98.9,Carga de usuario
+2026-04,San Juan,Sellos,Impuesto provincial,2857616530,1.0,Carga de usuario
+2026-04,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2026-04,San Juan,Otros impuestos,Otros recursos provinciales,312564844.20,-87.3,Carga de usuario
+2026-04,San Juan,Total,Total recursos provinciales,39320869039,10.7,Carga de usuario
+2026-05,San Juan,Ingresos Brutos,Impuesto provincial,27171728029,-0.4,Carga de usuario
+2026-05,San Juan,Inmobiliario,Impuesto provincial,467610141.30,-10.9,Carga de usuario
+2026-05,San Juan,Automotor,Impuesto provincial,3128361354,-51.6,Carga de usuario
+2026-05,San Juan,Sellos,Impuesto provincial,3228693513,-0.8,Carga de usuario
+2026-05,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2026-05,San Juan,Otros impuestos,Otros recursos provinciales,295385676,-89.8,Carga de usuario
+2026-05,San Juan,Total,Total recursos provinciales,34291778713,-15.1,Carga de usuario
+2026-06,San Juan,Ingresos Brutos,Impuesto provincial,28380702591,4.1,Carga de usuario
+2026-06,San Juan,Inmobiliario,Impuesto provincial,513497244,11.3,Carga de usuario
+2026-06,San Juan,Automotor,Impuesto provincial,2461545022,19.8,Carga de usuario
+2026-06,San Juan,Sellos,Impuesto provincial,2716548298,-17.3,Carga de usuario
+2026-06,San Juan,DJ,Otros recursos provinciales,0,,Carga de usuario
+2026-06,San Juan,Otros impuestos,Otros recursos provinciales,244020183,-89.0,Carga de usuario
+2026-06,San Juan,Total,Total recursos provinciales,34316313338,-2.8,Carga de usuario
